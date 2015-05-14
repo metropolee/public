@@ -1,0 +1,80 @@
+@import "style_components/_normalize.scss";
+
+$main: #B3B4B6;
+$white: #FFFFFF;
+$blue: #2C87A3;
+$light-blue: #3693B3;
+
+
+/***************** RESPONSIVE HELPERS *****************/
+$tablet: (min-width: 600px);
+$desktop: (min-width: 1025px);
+
+@mixin tablet {
+	@media #{$tablet} {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media #{$desktop} {
+		@content;
+	}
+}
+
+/***************** MY NORMALIZE *****************/
+* {
+	box-sizing: border-box;
+}
+
+button {
+	background: none;
+	border: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	line-height: 1;
+	padding: 0;
+}
+
+
+/***************** STYLES! *****************/
+html {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 20px;
+	color: $main;
+}
+
+a {
+	color: $light-blue;
+	text-decoration: none;
+	
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+	}
+}
+
+h1,
+.h1 {
+	font-size: 2.4rem;	// 48px
+	font-weight: normal;
+	
+	@include desktop {
+		font-size: 3.6rem;	// 72px
+	}
+}
+
+h2,
+.h2 {
+	font-size: 1.8rem;	// 36px
+	
+	@include desktop {
+		font-size: 2.4rem;	// 48px
+	}
+	
+}
+
+.heading1 {
+	font-size: 2.4rem;	// 48px
+	color: $white;
+}
