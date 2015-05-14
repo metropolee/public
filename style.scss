@@ -4,6 +4,10 @@ $main: #B3B4B6;
 $white: #FFFFFF;
 $blue: #2C87A3;
 $light-blue: #3693B3;
+$red: #FD7F6E;
+$green: rgba(98, 190, 125, .8);
+
+$easing: cubic-bezier(0.68, -0.25, 0.265, 1.25);
 
 
 /***************** RESPONSIVE HELPERS *****************/
@@ -34,14 +38,23 @@ button {
 	-moz-appearance: none;
 	line-height: 1;
 	padding: 0;
+	border-radius: 0;
 }
 
+input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	border: none;
+	border-radius: 0;
+}
 
-/***************** STYLES! *****************/
+/***************** GENERAL STYLES! *****************/
 html {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 20px;
 	color: $main;
+	line-height: 1.5;
 }
 
 a {
@@ -58,6 +71,7 @@ h1,
 .h1 {
 	font-size: 2.4rem;	// 48px
 	font-weight: normal;
+	color: $blue;
 	
 	@include desktop {
 		font-size: 3.6rem;	// 72px
@@ -76,5 +90,428 @@ h2,
 
 .heading1 {
 	font-size: 2.4rem;	// 48px
+	line-height: 1.35;
 	color: $white;
 }
+
+.heading2 {
+	display: block;
+	margin: 0 auto 40px;
+	font-size: 1.2rem;	// 24px
+	color: $blue;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.heading2-w {
+	@extend .heading2;
+	color: $white;
+}
+
+.button {
+	padding: 27px 50px;
+	color: $white;
+	line-height: 1;
+	border: 3px solid $white;
+	transition: all .2s ease-out;
+	text-transform: uppercase;
+	
+	&:hover {
+		background-color: $white;
+		color: $blue;
+	}
+}
+
+.button-solid {
+	background-color: $white;
+	color: $red;
+}
+
+nav ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-transform: lowercase;
+}
+
+/***************** LAYOUT STYLES *****************/
+/*.wrap-content {
+	padding-left: 9%;	// 15px 9.375%
+	padding-right: 9%;	// 15px 9.375%
+	margin: 0 auto;
+	
+	@include tablet {
+		max-width: 608px;
+	}
+	
+	@include desktop {
+		max-width: none;
+	}
+}*/
+
+.full-width {
+	padding: 0 9%;
+}
+
+.outer-content,
+.single-column,
+.double-column {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@include desktop {
+	.outer-content {
+		max-width: 1160px;
+	}
+	.single-column {
+		max-width: 840px;
+	}
+	.double-column {
+		
+		> div {
+			
+		}
+	}
+}
+
+.centered-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 500px;
+	
+	@include tablet {
+		padding: 0;
+	}
+}
+
+/* @group HEADER */
+
+header {
+	position: absolute;
+	left: 0;
+	top: 40px;
+	width: 100%;
+	z-index: 10001000;
+}
+
+.logo {
+	display: inline-block;
+	padding: 7px 0;
+}
+
+.menu-trigger {
+	position: relative;
+	float: right;
+	top: 0;
+	right: 0;
+	display: inline-block;
+	height: 50px;
+	width: 50px;
+	
+	&::after {
+		display: none;
+	}
+
+	@include desktop {
+		display: none;
+	}
+}
+
+.menu-trigger > span,
+.menu-trigger > span::after,
+.menu-trigger > span::before {
+	display: inline-block;
+	position: absolute;
+	right: 0;
+	width: 28px;
+	height: 3px;
+	padding: 0;
+	background-color: $white;
+}
+
+.menu-trigger > span::after,
+.menu-trigger > span::before {
+	content: '';
+	transform: translateY(-8px);
+}
+
+.menu-trigger > span::after {
+	transform: translateY(8px);
+}
+
+.menu-open .menu-trigger > span,
+.menu-open .menu-trigger > span::after,
+.menu-open .menu-trigger > span::before {
+	
+}
+
+.menu-container {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 80%;
+	height: 100%;
+	padding-top: 110px;
+	background-color: rgba(78, 80, 81, .9);
+	text-align: center;
+	z-index: -1;
+	overflow-y: auto;
+	transform: translate3d(100%,0,0);
+	transition: all .4s $easing;
+	
+	@include desktop {
+		position: static;
+		float: right;
+		width: auto;
+		padding: 0;
+		background: transparent;
+		transform: none;
+		overflow: visible;
+	}
+}
+
+.menu-voice {
+	padding: 10px;
+	margin: 10px auto;
+	
+	> a {
+		color: $white;
+	}
+	
+	&:last-child {
+		margin-top: 80px;
+		display: none;
+	}
+	
+	@include desktop {
+		display: inline-block;
+		margin: 0 15px;
+		
+		&:last-child {
+			margin-top: 0;
+			margin-right: 0;
+			display: inline-block;
+			
+			> a {
+				padding: 10px 30px;
+				font-size: .7rem;
+				background-color: $white;
+				color: $red;
+				
+				&:hover {
+					text-decoration: none;
+				}
+			}
+		}
+		
+		&.hide-desktop {
+			display: none;
+		}
+	}
+}
+
+.to-blur {
+	transition: all .3s ease-out;
+}
+
+.menu-open {
+	position: relative;
+	overflow: hidden !important;
+	max-height: 100% !important;
+	position: fixed;
+	
+	.menu-container {
+		transform: translate3d(4%,0,0);
+	}
+	
+	.to-blur {
+		filter: blur(5px);
+	}
+}
+
+/* @end */
+
+/* @group HOMEPAGE */
+
+.home-main {
+	padding-top: 110px;
+	padding-bottom: 50px;
+	color: $white;
+	background-color: $red;
+	background-image: url(../images/img/home-img-1.svg);
+	background: $red url('../images/img/home-img-1.svg') no-repeat;
+	background-size: auto 90%;
+	background-position-x: -100%;
+	background-position-y: bottom;
+	
+	p {
+		margin-top: 0;
+		margin-bottom: 50px;
+	}
+	
+	button {
+		width: 100%;
+		margin: 0 0 15px;
+	}
+	
+	@include tablet {
+		background-position-x: 130%;
+	
+		button {
+			width: auto;
+			margin-right: 10px;
+			
+			&:hover {
+				color: $red;
+			}
+		}
+	}
+	
+	@include desktop {
+		padding-top: 250px;
+		background-position-x: 700px;
+	}
+}
+
+.home-main__left {
+	max-width: 550px;
+}
+
+.home-features-container {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.home-features {
+	
+	@include desktop {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: flex-start;
+		flex-wrap: wrap;
+	}
+}
+
+.home-feature {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.img-placeholder {
+	display: block;
+	width: 100px;
+	height: 100px;
+	margin: 1.5rem auto;
+	border: 3px solid $blue;
+}
+
+.last-block {
+	padding-top: 100px;
+	background-image: url(../images/img/metro-bg-1.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	
+	button {
+		display: block;
+		margin: 40px auto 100px;
+	}
+}
+
+.green-block {
+	padding-top: 100px;
+	background: $green url('../images/img/home-img-2.svg') repeat-x left bottom;
+	background-size: auto 60%;
+	min-height: 600px;
+	
+	.button-solid,
+	.button:hover {
+		color: $green;
+	}
+}
+
+/* @end */
+
+/* @group FORM STYLES */
+
+.inline-input-transparent {
+	/* This is for input fields that have the submit button inline */
+	width: 100%;
+	height: 80px;
+	background-color: rgba($white, .5);
+	text-align: center;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	
+	@include tablet {
+		width: 70%;
+	}
+}
+
+.inline-input-solid {
+	width: 100%;
+	text-align: center;
+	
+	@include tablet {
+		width: 30%;
+		padding-left: 0;
+		padding-right: 0;
+		text-align: center;
+	}
+}
+
+/* @end */
+
+/* @group FOOTER */
+
+footer {
+	padding-top: 100px;
+	padding-bottom: 100px;
+	text-align: center;
+	
+	.copyright {
+		
+	}
+	
+	@include desktop {
+		text-align: left;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-content: flex-end;
+		
+		
+		.copyright {
+			display: inline;
+		}
+	}
+}
+
+.footer-menu {
+	margin-top: 40px;
+	
+	> li {
+		margin: 15px auto;
+		
+		> a {
+			color: inherit;
+		}
+	}
+	
+	@include desktop {
+		float: right;
+		margin: 0;
+		
+		> li {
+			display: inline-block;
+			margin: 8px .5rem;
+			
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+/* @end */

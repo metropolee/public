@@ -20,6 +20,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/distributors.kit": {
+		"fileType": 2048,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/distributors.kit",
+		"outputAbbreviatedPath": "\/public\/distributors.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/index.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -28,6 +37,24 @@
 		"outputAbbreviatedPath": "\/public\/index.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 1
+		},
+	"\/public\/css\/style.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/style.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/distributors.html": {
+		"fileType": 8192,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/distributors.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/public\/images\/favicons\/favicon-152.png": {
 		"fileType": 32768,
@@ -47,6 +74,171 @@
 		"initialSize": 732,
 		"inputAbbreviatedPath": "\/public\/images\/favicons\/favicon-32.png",
 		"outputAbbreviatedPath": "\/public\/images\/favicons\/favicon-32.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/iStock_000002326624_Double.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.53788e+07,
+		"inputAbbreviatedPath": "\/public\/images\/img\/iStock_000002326624_Double.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iStock_000002326624_Double.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/iStock_000035376766_Double.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 8.89161e+06,
+		"inputAbbreviatedPath": "\/public\/images\/img\/iStock_000035376766_Double.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iStock_000035376766_Double.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/iStock_000042176648_XXXLarge.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2.82448e+07,
+		"inputAbbreviatedPath": "\/public\/images\/img\/iStock_000042176648_XXXLarge.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iStock_000042176648_XXXLarge.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/iStock_000044978348_Double.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.94916e+07,
+		"inputAbbreviatedPath": "\/public\/images\/img\/iStock_000044978348_Double.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iStock_000044978348_Double.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/iStock_000053405050_Double.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.22588e+07,
+		"inputAbbreviatedPath": "\/public\/images\/img\/iStock_000053405050_Double.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iStock_000053405050_Double.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 84827,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-1.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-2.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 46748,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-2.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-2.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-3.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 124857,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-3.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-3.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-4.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31038,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-4.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-4.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-5.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 172223,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-5.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-5.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-6.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20333,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-6.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-6.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-bg-7.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 53348,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-bg-7.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-bg-7.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-m-bg-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 97313,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-m-bg-1.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-m-bg-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/metro-t-bg-1.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 220366,
+		"inputAbbreviatedPath": "\/public\/images\/img\/metro-t-bg-1.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/metro-t-bg-1.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/progile-image.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 108819,
+		"inputAbbreviatedPath": "\/public\/images\/img\/progile-image.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/progile-image.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -974,7 +1166,7 @@
 			}
 		},
 	"uglifyReservedNamesString": "$",
-	"websiteRelativeRoot": ""
+	"websiteRelativeRoot": "\/public\/"
 	},
 "settingsFileVersion": "2"
 }
