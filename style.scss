@@ -131,8 +131,8 @@ h2,
 	&:hover {
 		background-color: $white;
 		color: $blue;
-		text-decoration: none;
-		box-shadow: 0px 2px 4px rgba(0,0,0,.2);
+		text-decoration: underline;
+		box-shadow: 0px 2px 5px rgba(0,0,0,.3);
 	}
 }
 
@@ -149,19 +149,6 @@ nav ul {
 }
 
 /***************** LAYOUT STYLES *****************/
-/*.wrap-content {
-	padding-left: 9%;	// 15px 9.375%
-	padding-right: 9%;	// 15px 9.375%
-	margin: 0 auto;
-	
-	@include tablet {
-		max-width: 608px;
-	}
-	
-	@include desktop {
-		max-width: none;
-	}
-}*/
 
 // Contain floats: nicolasgallagher.com/micro-clearfix-hack/
 .clearfix {
@@ -258,10 +245,6 @@ nav ul {
 		position: static;
 		opacity: 1;
 		text-align: center;
-		/*display: flex;
-		flex-direction: row;
-		justify-content: center;
-		align-content: center;*/
 		
 		> img {
 			position: static;
@@ -569,6 +552,7 @@ header {
 }
 
 .homepage .last-block {
+	text-align: center;
 	background-image: url(/images/img/home-800.jpg);
 	
 	@include tablet {
@@ -582,13 +566,12 @@ header {
 
 .green-block {
 	padding-top: 100px;
-	background: $green url('../images/img/home-img-2.svg') repeat-x left bottom;
-	background-size: auto 60%;
+	background: url('../images/img/home-img-2.svg') repeat-x left bottom;
 	min-height: 600px;
 	
 	.button-solid,
 	.button:hover {
-		color: $green;
+		color: $dark;
 	}
 }
 
@@ -959,7 +942,6 @@ input[type=checkbox] {
 	width: 100%;
 	min-height: 70vh;
 	transition: height .4s ease-out;
-/*	background-image: url(../images/img/sabrina.jpg);*/
 	
 	@include tablet {
 		display: table;

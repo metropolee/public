@@ -240,17 +240,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/img\/about-2.jpg": {
-		"fileType": 16384,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 108819,
-		"inputAbbreviatedPath": "\/public\/images\/img\/about-2.jpg",
-		"outputAbbreviatedPath": "\/public\/images\/img\/about-2.jpg",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/images\/img\/about-2560.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -438,13 +427,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/public\/images\/img\/iPhone6.png": {
+	"\/public\/images\/img\/iphone6.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 20272,
-		"inputAbbreviatedPath": "\/public\/images\/img\/iPhone6.png",
-		"outputAbbreviatedPath": "\/public\/images\/img\/iPhone6.png",
+		"inputAbbreviatedPath": "\/public\/images\/img\/iphone6.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iphone6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -530,7 +519,7 @@
 		"outputAbbreviatedPath": "\/public\/js\/scripts-compiled.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
 	"\/style-noscript.scss": {
@@ -560,7 +549,7 @@
 		"outputAbbreviatedPath": "\/public\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1

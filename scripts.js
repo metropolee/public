@@ -1,21 +1,3 @@
-/***************** HELPERS *****************/
-//Element.prototype.addClassC = Element.prototype.addClassC || function ( htmlClass ) {
-//	this.classList.add( htmlClass );
-//	return this;
-//};
-//
-//Element.prototype.removeClassC = Element.prototype.removeClassC || function ( htmlClass ) {
-//	this.classList.remove( htmlClass );
-//	return this;
-//};
-//
-//Element.prototype.toggleClassC = Element.prototype.toggleClassC || function ( htmlClass ) {
-//	this.classList.toggle( htmlClass );
-//	return this;
-//};
-
-
-
 function menuHandler() {
 	var menuTrigger = document.querySelector('.menu-trigger');
 	menuTrigger.addEventListener('click', function() {
