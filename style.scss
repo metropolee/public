@@ -72,8 +72,9 @@ a {
 
 h1,
 .h1 {
-	font-size: 2.4rem;	// 48px
+	font-size: 2.1rem;	// 42px
 	font-weight: normal;
+	letter-spacing: -1px;
 	color: $blue;
 	text-transform: uppercase;
 	text-align: center;
@@ -85,7 +86,7 @@ h1,
 
 h2,
 .h2 {
-	font-size: 1.8rem;	// 36px
+	font-size: 1.7rem;	// 34px
 	color: $blue;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -98,6 +99,7 @@ h2,
 
 .heading1 {
 	font-size: 2.4rem;	// 48px
+	letter-spacing: -1px;
 	line-height: 1.35;
 	color: $white;
 }
@@ -610,8 +612,12 @@ header {
 .input-container-fullwidth {
 	width: 100%;
 	
-	> input {
-		width: 45%;
+	@include desktop {
+		
+		> * {
+			display: inline-block;
+			width: 45%;
+		}
 	}
 }
 
