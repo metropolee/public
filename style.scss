@@ -553,14 +553,14 @@ header {
 
 .homepage .last-block {
 	text-align: center;
-	background-image: url(/images/img/home-800.jpg);
+	background-image: url(../images/img/home-800.jpg);
 	
 	@include tablet {
-		background-image: url(/images/img/home-1280.jpg);
+		background-image: url(../images/img/home-1280.jpg);
 	}
 	
 	@include desktop {
-		background-image: url(/images/img/home-2560.jpg);
+		background-image: url(../images/img/home-2560.jpg);
 	}
 }
 
@@ -763,26 +763,26 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
-		background-image: url(/images/img/dist-1-800.jpg);
+		background-image: url(../images/img/dist-1-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/dist-1-1280.jpg);
+			background-image: url(../images/img/dist-1-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/dist-1-2560.jpg);
+			background-image: url(../images/img/dist-1-2560.jpg);
 		}
 	}
 	
 	.last-block {
-		background-image: url(/images/img/dist-2-800.jpg);
+		background-image: url(../images/img/dist-2-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/dist-2-1280.jpg);
+			background-image: url(../images/img/dist-2-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/dist-2-2560.jpg);
+			background-image: url(../images/img/dist-2-2560.jpg);
 		}
 	}
 }
@@ -838,26 +838,26 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
-		background-image: url(/images/img/cert-1-800.jpg);
+		background-image: url(../images/img/cert-1-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/cert-1-1280.jpg);
+			background-image: url(../images/img/cert-1-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/cert-1-2560.jpg);
+			background-image: url(../images/img/cert-1-2560.jpg);
 		}
 	}
 	
 	.last-block {
-		background-image: url(/images/img/cert-2-800.jpg);
+		background-image: url(../images/img/cert-2-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/cert-2-1280.jpg);
+			background-image: url(../images/img/cert-2-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/cert-2-2560.jpg);
+			background-image: url(../images/img/cert-2-2560.jpg);
 		}
 	}
 }
@@ -885,14 +885,14 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
-		background-image: url(/images/img/prod-1-800.jpg);
+		background-image: url(../images/img/prod-1-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/prod-1-1280.jpg);
+			background-image: url(../images/img/prod-1-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/prod-1-2560.jpg);
+			background-image: url(../images/img/prod-1-2560.jpg);
 		}
 	}
 }
@@ -921,14 +921,14 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
-		background-image: url(/images/img/about-800.jpg);
+		background-image: url(../images/img/about-800.jpg);
 		
 		@include tablet {
-			background-image: url(/images/img/about-1280.jpg);
+			background-image: url(../images/img/about-1280.jpg);
 		}
 		
 		@include desktop {
-			background-image: url(/images/img/about-2560.jpg);
+			background-image: url(../images/img/about-2560.jpg);
 		}
 	}
 }
