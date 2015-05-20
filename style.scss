@@ -76,6 +76,7 @@ h1,
 	font-weight: normal;
 	color: $blue;
 	text-transform: uppercase;
+	text-align: center;
 	
 	@include desktop {
 		font-size: 3.6rem;	// 72px
@@ -129,6 +130,7 @@ h2,
 		background-color: $white;
 		color: $blue;
 		text-decoration: none;
+		box-shadow: 0px 2px 4px rgba(0,0,0,.2);
 	}
 }
 
@@ -404,6 +406,10 @@ header {
 	
 	> a {
 		color: $white;
+		
+		&.current-page {
+			font-weight: bold;
+		}
 	}
 	
 	&:last-child {
@@ -436,15 +442,24 @@ header {
 	}
 }
 
+.home .home-link,
+.product .product-link,
+.certified .certified-link,
+.distributors .distributors-link,
+.about .about-link {
+	/* Highlight current page */
+	font-weight: bold;
+}
+
 .to-blur {
 	transition: all .3s ease-out;
 }
 
 .menu-open {
-	position: relative;
-	overflow: hidden !important;
-	max-height: 100% !important;
 	position: fixed;
+	overflow: hidden;
+	max-height: 100%;
+	max-width: 100vw;
 	
 	.menu-container {
 		transform: translate3d(4%,0,0);
@@ -470,8 +485,7 @@ header {
 	background-color: $red;
 	background: $red url('../images/img/home-img-1.svg') no-repeat;
 	background-size: auto 90%;
-	background-position-x: -100%;
-	background-position-y: bottom;
+	background-position: -85% bottom;
 	
 	p {
 		margin-top: 0;
@@ -484,7 +498,7 @@ header {
 	}
 	
 	@include tablet {
-		background-position-x: 130%;
+		background-position: 130% bottom;
 	
 		button {
 			width: auto;
@@ -496,9 +510,13 @@ header {
 		}
 	}
 	
+	@media (min-width: 1024px) {
+		background-position: 90% bottom;
+	}
+	
 	@include desktop {
 		padding-top: 250px;
-		background-position-x: 700px;
+		background-position: 700px bottom;
 	}
 }
 
@@ -698,6 +716,7 @@ input[type=checkbox] {
 	display: inline-block;
 	width: 100%;
 	text-align: center;
+	vertical-align: bottom;
 	
 	@include tablet {
 		width: 30%;
@@ -820,6 +839,12 @@ input[type=checkbox] {
 	
 	h2 {
 		text-align: center;
+	}
+	
+	@include desktop {
+		h2 {
+			text-align: left;
+		}
 	}
 }
 
@@ -988,6 +1013,10 @@ footer {
 		
 		> a {
 			color: inherit;
+			
+			&.current-page {
+				font-weight: bold;
+			}
 		}
 	}
 	

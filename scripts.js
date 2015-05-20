@@ -55,7 +55,7 @@ function updateMammoccio() {
 		mammoccioContentToShow = mainMammoccio.querySelector( '.mammoccio-content.' + name ),
 		mammoccioBgToKill = mainMammoccio.querySelector( '.main-mammoccio__bg.current' ),
 		mammoccioContentToKill = mainMammoccio.querySelector( '.mammoccio-content.current' );
-	if ( mammoccioBgToKill && mammoccioBgToKill != mammoccioBgToShow ) {
+	if ( mammoccioBgToKill && mammoccioBgToKill !== mammoccioBgToShow ) {
 		mammoccioBgToKill.classList.remove( 'current' );
 		mammoccioContentToKill.classList.remove( 'current' );
 		mammoccioBgToShow.classList.add( 'current' );
@@ -65,8 +65,8 @@ function updateMammoccio() {
 }
 
 function handleMammocci() {
-	var mammocci = document.querySelectorAll( '.mammoccio' );
-	if ( mammocci ) {
+	if ( mainMammoccio ) {
+		var mammocci = document.querySelectorAll( '.mammoccio' );
 		mainMammoccio.style.height = mainMammoccio.querySelector( '.mammoccio-content.current' ).offsetHeight + 40 + 'px';
 		[].forEach.call( mammocci, function ( mammoccio ) {
 			mammoccio.addEventListener( 'click', updateMammoccio, false);
