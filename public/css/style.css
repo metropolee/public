@@ -979,6 +979,7 @@ input[type=checkbox] {
     color: #2C87A3; } }
 
 .distributors .hero-block {
+  background-color: rgba(44, 135, 163, 0.75);
   background-image: url(../images/img/dist-1-800.jpg); }
   @media (min-width: 600px) {
     .distributors .hero-block {
@@ -1036,6 +1037,7 @@ input[type=checkbox] {
     color: #F9B37A; } }
 
 .certified .hero-block {
+  background-color: rgba(249, 179, 122, 0.75);
   background-image: url(../images/img/cert-1-800.jpg); }
   @media (min-width: 600px) {
     .certified .hero-block {
@@ -1088,6 +1090,7 @@ input[type=checkbox] {
     color: #4E5051; } }
 
 .product .hero-block {
+  background-color: rgba(78, 80, 81, 0.75);
   background-image: url(../images/img/prod-1-800.jpg); }
   @media (min-width: 600px) {
     .product .hero-block {
@@ -1113,6 +1116,7 @@ input[type=checkbox] {
     color: rgba(98, 190, 125, 0.8); } }
 
 .about .hero-block {
+  background-color: rgba(98, 190, 125, 0.75);
   background-image: url(../images/img/about-800.jpg); }
   @media (min-width: 600px) {
     .about .hero-block {

@@ -778,6 +778,7 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
+		background-color: rgba($blue, .75);
 		background-image: url(../images/img/dist-1-800.jpg);
 		
 		@include tablet {
@@ -860,6 +861,7 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
+		background-color: rgba($yellow, .75);
 		background-image: url(../images/img/cert-1-800.jpg);
 		
 		@include tablet {
@@ -913,6 +915,7 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
+		background-color: rgba($dark, .75);
 		background-image: url(../images/img/prod-1-800.jpg);
 		
 		@include tablet {
@@ -955,6 +958,7 @@ input[type=checkbox] {
 	}
 	
 	.hero-block {
+		background-color: rgba($green, .75);
 		background-image: url(../images/img/about-800.jpg);
 		
 		@include tablet {
