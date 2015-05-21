@@ -822,8 +822,8 @@ header {
   background-repeat: no-repeat;
   overflow: hidden;
   color: #FFFFFF; }
-  .last-block button {
-    display: block;
+  .last-block .button {
+    display: inline-block;
     margin: 40px auto 100px; }
 
 .homepage .last-block {
@@ -920,9 +920,12 @@ select {
 input[type=checkbox] {
   position: absolute;
   left: -40000px; }
-  input[type=checkbox]:hover + label,
-  input[type=checkbox]:focus + label {
-    text-decoration: underline; }
+  input[type=checkbox]:hover + label > span:after,
+  input[type=checkbox]:focus + label > span:after {
+    -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+            transform: scale(0.8);
+    opacity: .3; }
   input[type=checkbox] + label {
     position: static;
     -webkit-transform: none;
@@ -996,6 +999,8 @@ input[type=checkbox] {
 
 .terms-container {
   clear: both; }
+  .terms-container a {
+    color: inherit; }
 
 .submit-container {
   margin-top: 40px;
