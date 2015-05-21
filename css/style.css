@@ -822,7 +822,7 @@ header {
   background-repeat: no-repeat;
   overflow: hidden;
   color: #FFFFFF; }
-  .last-block .button {
+  .last-block a.button {
     display: inline-block;
     margin: 40px auto 100px; }
 
