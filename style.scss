@@ -701,6 +701,18 @@ select {
 	outline: none;
 }
 
+::-webkit-input-placeholder {
+	color: rgba($white, .6);
+}
+
+::-moz-placeholder {
+	color: rgba($white, .6);
+}
+
+:-ms-input-placeholder {
+	color: rgba($white, .6);
+}
+
 select {
 	background: url('../images/icons/triangle.svg') no-repeat 97% center;
 	transition: all .2s ease-out;
