@@ -920,6 +920,15 @@ select {
   border-bottom: 1px solid #FFFFFF;
   outline: none; }
 
+::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
+:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.6); }
+
 select {
   background: url("../images/icons/triangle.svg") no-repeat 97% center;
   -webkit-transition: all 0.2s ease-out;
