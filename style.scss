@@ -525,6 +525,15 @@ header {
 .home-feature {
 	max-width: 400px;
 	margin: 40px auto;
+	text-align: center;
+	
+	> img {
+		margin-bottom: 1rem;
+	}
+	
+	> p {
+		text-align: left;
+	}
 }
 
 .img-placeholder {
@@ -809,9 +818,10 @@ input[type=checkbox] {
 .vantaggio {
 	float: left;
 	width: calc(100vw - 4.5%);
+	text-align: center;
 	
-	.img-placeholder {
-		border-color: $white;
+	> img {
+		margin-bottom: 1rem;
 	}
 	
 	@include tablet {
