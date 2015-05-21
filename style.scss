@@ -415,10 +415,6 @@ header {
 			> a {
 				padding: 10px 30px;
 				font-size: .7rem;
-				
-				&:hover {
-					text-decoration: none;
-				}
 			}
 		}
 		
@@ -478,21 +474,21 @@ header {
 		margin-bottom: 50px;
 	}
 	
-	button {
+	.button {
 		width: 100%;
 		margin: 0 0 15px;
+		
+		&:hover {
+			color: $red;
+		}
 	}
 	
 	@include tablet {
 		background-position: 130% bottom;
 	
-		button {
+		.button {
 			width: auto;
 			margin-right: 10px;
-			
-			&:hover {
-				color: $red;
-			}
 		}
 	}
 	
