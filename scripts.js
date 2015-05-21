@@ -59,7 +59,6 @@ function handleMammocci() {
 document.addEventListener('DOMContentLoaded', function() {
 	// FastClick magic
 	FastClick.attach(document.body);
-	responsi.init();
 	handleMammocci();
 	menuHandler();
 }, false);
