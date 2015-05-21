@@ -576,8 +576,8 @@ header {
 	overflow: hidden;
 	color: $white;
 	
-	button {
-		display: block;
+	.button {
+		display: inline-block;
 		margin: 40px auto 100px;
 	}
 }
@@ -706,8 +706,9 @@ input[type=checkbox] {
 	&:hover,
 	&:focus {
 		
-		+ label {
-			text-decoration: underline;
+		+ label > span:after {
+			transform: scale(.8);
+			opacity: .3;
 		}
 	}
 	
@@ -794,6 +795,10 @@ input[type=checkbox] {
 
 .terms-container {
 	clear: both;
+	
+	a {
+		color: inherit;
+	}
 }
 
 .submit-container {
