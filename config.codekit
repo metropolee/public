@@ -38,6 +38,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/backstop.json": {
+		"fileType": 524288,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/backstop.json",
+		"orderOutput": 0,
+		"outputAbbreviatedPath": "\/backstop-min.json",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1
+		},
 	"\/bower_components\/fastclick\/bower.json": {
 		"fileType": 524288,
 		"ignore": 1,
@@ -1485,7 +1496,7 @@
 	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
-	"skippedItemsString": ".svn, .git, .hg, log, _logs, _cache, cache, logs, node_modules, .esproj",
+	"skippedItemsString": "node_modules, _logs, .hg, _cache, log, logs, cache, .svn, .git, .esproj, \/metropolee.esproj, \/bower_components\/backstopjs",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",

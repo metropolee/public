@@ -1,0 +1,55 @@
+{
+  "viewports": [
+    {
+      "name": "phone",
+      "width": 320,
+      "height": 480
+    },
+    {
+      "name": "tablet_v",
+      "width": 768,
+      "height": 1024
+    },
+    {
+    	"name": "laptop",
+    	"width": 1280,
+    	"height": 768
+    },
+    {
+    	"name": "iMac",
+    	"width": 1920,
+    	"height": 1000
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "Metropolee",
+      "url": "../../public/index.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "header",
+        ".home-main",
+        ".home-features-container",
+        ".home-features",
+        "footer"
+      ],
+      "readyEvent": null,
+      "delay": 200,
+      "misMatchThreshold" : 0.1
+    },
+    {
+      "label": "Metropolee",
+      "url": "../../public/distributors.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+      	"body",
+        ".hero-block"
+      ],
+      "readyEvent": null,
+      "delay": 200,
+      "misMatchThreshold" : 0.1
+    }
+  ]
+}
