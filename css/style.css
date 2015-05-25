@@ -724,8 +724,8 @@ header {
   font-weight: bold; }
 
 .to-blur {
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out; }
+  -webkit-transition: all 0.3s linear;
+          transition: all 0.3s linear; }
 
 .menu-open {
   position: fixed;
