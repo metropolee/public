@@ -461,7 +461,7 @@ header {
 }
 
 .to-blur {
-	transition: all .3s ease-out;
+	transition: all .3s linear;
 }
 
 .menu-open {
