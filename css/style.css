@@ -649,7 +649,9 @@ header {
   width: 28px;
   height: 3px;
   padding: 0;
-  background-color: #FFFFFF; }
+  background-color: #FFFFFF;
+  line-height: 0;
+  text-indent: 99999px; }
 
 .menu-trigger > span::after,
 .menu-trigger > span::before {
