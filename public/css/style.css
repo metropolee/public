@@ -720,7 +720,6 @@ header {
 .certified .certified-link,
 .distributors .distributors-link,
 .about .about-link,
-.generic .generic-link,
 .faq .faq-link {
   /* Highlight current page */
   font-weight: bold; }
