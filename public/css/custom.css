@@ -1,0 +1,399 @@
+/* @override 
+	https://6380.sysaps.com/common/templates/public/css/custom.css */
+
+/* This css stinks. This has been put up in a hurry to make up for a markup that I cannot control and that has been done by someone who doesn't care shit about poor me having to cope with his mess. This has caused a messy css. The idea is to have everything put back into the main stylesheet and cleaned up properly afterwards. Now I can't even access the main css! */
+
+.generic .generic-link {
+	font-weight: normal !important;
+}
+
+.members div.to-blur,
+.signup div.to-blur {
+	text-align: center;
+	background-color: #2C87A3;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-image: url(http://6380.ritu.dev.austdev.com/clientinc/resources/images/img/home-800.jpg);
+}
+
+.signup div.to-blur {
+	padding-top: 180px;
+}
+
+.signup .hero-block,
+.members .hero-block {
+	display: none;
+}
+
+@media (min-width: 600px) {
+	.members div.to-blur,
+	.signup div.to-blur {
+		background-image: url(http://6380.ritu.dev.austdev.com/clientinc/resources/images/img/home-1280.jpg); } }
+@media (min-width: 1025px) {
+	.members div.to-blur,
+	.signup div.to-blur {
+		background-image: url(http://6380.ritu.dev.austdev.com/clientinc/resources/images/img/home-2560.jpg); } }
+
+.alert {
+	margin: 30px 15px !important;
+	border-radius: 0;
+	border: none;
+	color: rgba(255, 255, 255, .8);
+	background-color: rgba(218, 237, 246, .3);
+}
+
+.alert-danger {
+	color: rgba(255, 200, 200, 1);
+	background-color: rgba(255, 50, 50, .3);
+}
+
+@media (min-width: 600px) {
+	.alert {
+		max-width: 470px;
+		margin-left: auto !important;
+		margin-right: auto !important;
+	}
+}
+
+.single-column .row .col-xs-12 .alert {
+	position: static;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+@media (min-width: 600px) {
+	.single-column .row .col-xs-12 .alert {
+		position: relative;
+		top: 0;
+	}
+}
+
+.form-wrapper.signup h5,
+.signup legend,
+.signup .container h4 {
+	font-size: 20px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: 300 !important;
+}
+
+#frm-signup {
+	color: white;
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+#frm-signup label,
+#frm-signup input,
+#frm-signup p {
+	color: white !important;
+}
+
+#frm-signup .help-block {
+	color: rgba(255, 255, 255, .5);
+	font-size: 12px;
+}
+
+#frm-signup .error {
+	color: #f66060 !important;
+}
+
+.error.asterisk {
+	position: absolute;
+	top: 0;
+	right: 0px;
+}
+
+#joinForm,
+#member-login-form {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+	min-height: 700px;
+	padding-top: 50px;
+	margin: 0 auto;
+	font-size: 1rem;
+}
+
+#joinForm {
+	min-height: 0;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#joinForm .form-group:last-of-type {
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	#joinForm {
+		
+	}
+}
+
+#member-login-form {
+	min-height: 0;
+}
+
+#member-login-form .col-xs-12.col-sm-8.col-md-6.col-sm-offset-2.col-md-offset-3 {
+	width: 100%;
+	margin: 0;
+}
+
+#member-login-form fieldset {
+	border: none;
+}
+
+#member-login-form fieldset h2 {
+	margin-bottom: 40px;
+	font-size: 20px;
+	color: white;
+}
+
+#member-login-form .form-group::after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+#member-login-form a,
+#frm-signup a {
+	color: white;
+	text-decoration: underline;
+}
+
+#member-login-form .text-right,
+#member-login-form .text-right label {
+	float: right;
+	width: 100%;
+	margin: 0 0 0 0;
+	font-size: .6rem;
+	line-height: 1.3;
+}
+
+#member-login-form fieldset > .text-right:first-of-type {
+	margin-top: -15px;
+	margin-bottom: 7px;
+}
+
+#member-login-form hr {
+	display: none;
+}
+
+#joinForm div,
+#member-login-form > div {
+	max-width: 500px;
+	margin: auto !important;
+}
+
+.col-xs-12.col-sm-6 {
+	width: 100%;
+}
+
+#joinForm input,
+#member-login-form input,
+#frm-signup input,
+#frm-signup select {
+	height: auto;
+	padding: 0.3rem 0 0.5rem;
+	background: transparent;
+	border: none !important;
+	border-bottom: 1px solid white !important;
+	border-radius: 0;
+	box-shadow: none;
+	color: white;
+	line-height: 1.3;
+	font-size: 1rem;
+}
+
+#frm-signup select {
+	background-image: url("http://6380.ritu.dev.austdev.com/clientinc/resources/images/icons/triangle.png");
+	background-repeat: no-repeat;
+	background-position: 97% center;
+}
+
+#member-login-form fieldset input[type=checkbox],
+#frm-signup input[type=checkbox] {
+	position: static;
+	display: inline-block;
+	width: auto;
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+	appearance: checkbox;
+}
+
+#frm-signup input[type=radio] {
+	-webkit-appearance: radio;
+	-moz-appearance: radio;
+	appearance: radio;
+}
+
+#member-login-form img,
+#frm-signup img {
+	float: left;
+	display: inline-block;
+	width: 100px;
+	height: auto;
+	border-top: 8px solid #E6E6E6;
+	border-bottom: 15px solid #E6E6E6;
+	border-left: 7px solid #E6E6E6;
+	border-right: 7px solid #E6E6E6;
+}
+
+#captcha {
+	padding: 0.3rem 0 0.5rem !important;
+	line-height: 1.3 !important;
+}
+
+#member-login-form #captcha {
+	float: right;
+	display: inline-block;
+	width: calc(100% - 120px) !important;
+}
+
+#joinForm label,
+#member-login-form label {
+	float: left;
+	font-size: 1rem;
+	color: rgba(255, 255, 255, .7);
+	display: inline;
+}
+
+#frm-signup > .control-label {
+	padding: 0;
+	float: left;
+	max-width: 100px;
+}
+
+#frm-signup > .control-label p {
+	padding: 0;
+	margin: 0;
+}
+
+#frm-signup > .control-label + div.col-xs-12.col-sm-8 {
+	width: calc(100% - 100px);
+	float: left;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#frm-signup > .control-label + div.col-xs-12.col-sm-8 div {
+	padding-right: 0;
+}
+
+.terms-conditions {
+	border-radius: 0;
+	background-color: rgba(218, 237, 246, .3);
+	border: none;
+	color: rgba(255, 255, 255, .8);
+	box-shadow: none;
+	max-height: 250px;
+	overflow-y: auto;
+}
+
+#frm-signup .col-xs-12.col-sm-offset-2.col-sm-6 {
+	margin-left: 0;
+	text-align: center;
+}
+
+.btn-primary,
+#joinForm .btn-primary,
+#member-login-form .btn,
+#member-login-form .btn-lg,
+#frm-signup .btn-primary {
+	display: inline-block;
+	width: auto;
+	margin: 40px auto 0;
+	padding: 27px 50px;
+	font-size: inherit;
+	border-radius: 0;
+	background-color: white !important;
+	color: #2C87A3 !important;
+	text-transform: uppercase;
+	line-height: 1.3;
+	border: none !important;
+}
+
+#frm-signup .btn-primary {
+	display: block;
+	margin-bottom: 100px;
+}
+
+/*#member-login-form .col-xs-6.col-sm-6.col-md-6 {
+	width: 100%;
+	text-align: center;
+	float: right;
+}
+
+#member-login-form .col-xs-6.col-sm-6.col-md-6:last-of-type {
+	float: left;
+}*/
+
+#member-login-form .btn {
+	width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: pre;
+	word-wrap: break-word;
+	word-break: hyphenate;
+	font-size: .8rem;
+}
+
+@media (min-width:600px) {
+	#member-login-form .btn {
+		padding-left: 0;
+		padding-right: 0;
+		font-size: 1rem;
+	}
+}
+
+#member-login-form a.btn-lg {
+	background: transparent !important;
+	color: white !important;
+	text-transform: none;
+}
+
+footer {
+	background-color: white;
+}
+
+footer nav {
+	display: inline;
+}
+
+.container {
+	position: static;
+}
+
+.container footer {
+	position: absolute;
+	left: 0;
+	
+}
+
+small img {
+	vertical-align: baseline;
+}
+
+.signup p font {
+	display: block;
+	max-width: 700px;
+	clear: both;
+	color: white;
+	margin: 0 auto;
+	background: transparent !important;
+}
