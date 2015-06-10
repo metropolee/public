@@ -501,8 +501,9 @@ header {
 	background-color: $red;
 	background: $red url('../images/img/home-img-1.svg') no-repeat;
 	background-size: auto 90%;
-	background-position: -80% bottom;
+	background-position: 250px bottom;
 	text-align: left;
+	text-shadow: 0 0 2px rgba($red, 1);
 	
 	p {
 		margin-top: 0;
@@ -512,11 +513,18 @@ header {
 	.button {
 		width: 100%;
 		margin: 0 0 15px;
+		text-shadow: none;
+		-webkit-filter: drop-shadow(0 0 2px $red);
+		filter: drop-shadow(0 0 2px $red);
 		
 		&:hover {
 			color: $red;
 		}
 	}
+	
+	/*@media (min-width: 370px) {
+		background-position: -90% bottom;
+	}*/
 	
 	@include tablet {
 		padding-top: 200px;
@@ -535,6 +543,14 @@ header {
 	@include desktop {
 		padding-top: 250px;
 		background-position: 700px bottom;
+	}
+	
+	@media (min-width: 1600px) {
+		background-position: 75% bottom;
+	}
+	
+	@media (min-width: 2000px) {
+		background-position: 65% bottom;
 	}
 }
 
@@ -1172,7 +1188,7 @@ input[type=checkbox] {
 
 /* @group SIGNUP/LOGIN */
 
-.signup,
+.sign-up,
 .login {
 	
 	.button-solid {
