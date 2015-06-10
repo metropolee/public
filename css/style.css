@@ -756,14 +756,21 @@ header {
   background-color: #FD7F6E;
   background: #FD7F6E url("../images/img/home-img-1.svg") no-repeat;
   background-size: auto 90%;
-  background-position: -80% bottom;
-  text-align: left; }
+  background-position: 250px bottom;
+  text-align: left;
+  text-shadow: 0 0 2px #fd7f6e;
+  /*@media (min-width: 370px) {
+		background-position: -90% bottom;
+	}*/ }
   .home-main p {
     margin-top: 0;
     margin-bottom: 50px; }
   .home-main .button {
     width: 100%;
-    margin: 0 0 15px; }
+    margin: 0 0 15px;
+    text-shadow: none;
+    -webkit-filter: drop-shadow(0 0 2px #FD7F6E);
+    filter: drop-shadow(0 0 2px #FD7F6E); }
     .home-main .button:hover {
       color: #FD7F6E; }
   @media (min-width: 600px) {
@@ -780,6 +787,12 @@ header {
     .home-main {
       padding-top: 250px;
       background-position: 700px bottom; } }
+  @media (min-width: 1600px) {
+    .home-main {
+      background-position: 75% bottom; } }
+  @media (min-width: 2000px) {
+    .home-main {
+      background-position: 65% bottom; } }
 
 .home-main__left {
   max-width: 550px; }
@@ -1285,30 +1298,30 @@ input[type=checkbox] {
 
 /* @end */
 /* @group SIGNUP/LOGIN */
-.signup .button-solid,
-.signup .inline-input-solid,
-.signup .captcha-solid,
+.sign-up .button-solid,
+.sign-up .inline-input-solid,
+.sign-up .captcha-solid,
 .login .button-solid, .login .inline-input-solid, .login .captcha-solid {
   color: #2C87A3; }
 
 @media (min-width: 1025px) {
-  .signup .menu-voice:last-child > a,
+  .sign-up .menu-voice:last-child > a,
   .login .menu-voice:last-child > a {
     color: #2C87A3; } }
 
-.signup .hero-block,
+.sign-up .hero-block,
 .login .hero-block {
   padding-top: 150px;
   padding-bottom: 100px;
   background-color: rgba(44, 135, 163, 0.75);
   background-image: url(../images/img/home-800.jpg); }
   @media (min-width: 600px) {
-    .signup .hero-block,
+    .sign-up .hero-block,
     .login .hero-block {
       padding-top: 230px;
       background-image: url(../images/img/home-1280.jpg); } }
   @media (min-width: 1025px) {
-    .signup .hero-block,
+    .sign-up .hero-block,
     .login .hero-block {
       background-image: url(../images/img/home-2560.jpg); } }
 
