@@ -227,6 +227,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/css\/admin.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/css\/admin.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/css\/custom.css": {
 		"fileType": 16,
 		"ignore": 0,
@@ -645,13 +654,13 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/images\/img\/iphone6.png": {
+	"\/public\/images\/img\/iPhone6.png": {
 		"fileType": 32768,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"initialSize": 20272,
-		"inputAbbreviatedPath": "\/public\/images\/img\/iphone6.png",
-		"outputAbbreviatedPath": "\/public\/images\/img\/iphone6.png",
+		"inputAbbreviatedPath": "\/public\/images\/img\/iPhone6.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/iPhone6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
