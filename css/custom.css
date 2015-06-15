@@ -4,6 +4,26 @@
 
 /* This css stinks. This has been put up in a hurry to make up for a markup that I cannot control and that has been done by someone who doesn't care shit about other people working on their code. The idea is to have everything put back into the main stylesheet and cleaned up properly afterwards. Now I can't even access the main css! */
 
+.menu-trigger > span {
+	text-indent: 99999px;
+	line-height: 0;
+}
+
+.logo > object {
+	width: 191px;
+	pointer-events: none;
+}
+
+@media (min-width:600px) {
+	.logo > object {
+		width: 192px;
+	}
+}
+
+h2 {
+	margin: 1.7em 0 .8em;
+}
+
 .generic .generic-link {
 	font-weight: normal !important;
 }
@@ -15,7 +35,7 @@
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center top;
-	background-image: url(http://www.metropolee.com/clientinc/resources/images/img/home-800.jpg);
+	background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
 }
 
 .signup div.to-blur {
@@ -30,11 +50,11 @@
 @media (min-width: 600px) {
 	.members div.to-blur,
 	.signup div.to-blur {
-		background-image: url(http://www.metropolee.com/clientinc/resources/images/img/home-1280.jpg); } }
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg); } }
 @media (min-width: 1025px) {
 	.members div.to-blur,
 	.signup div.to-blur {
-		background-image: url(http://www.metropolee.com/clientinc/resources/images/img/home-2560.jpg); } }
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg); } }
 
 .members .alert,
 .signup .alert {
@@ -227,7 +247,7 @@
 #frm-signup select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
-	background-image: url("https://metropolee.s3.amazonaws.com/images/icons/triangle.svg");
+	background-image: url("//metropolee.s3.amazonaws.com/images/icons/triangle.svg");
 	background-repeat: no-repeat;
 	background-position: 97% center;
 }
@@ -456,14 +476,61 @@ small img {
   .home-main {
     background-position: 65% bottom !important; } }
 
+.homepage .last-block {
+  background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg) !; }
+  @media (min-width: 600px) {
+    .homepage .last-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg) !important; } }
+  @media (min-width: 1025px) {
+    .homepage .last-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg) !important; } }
+
+.green-block {
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/home-img-2.svg') !important;
+}
+
+.distributors .hero-block {
+  background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg) !important; }
+  @media (min-width: 600px) {
+    .distributors .hero-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg) !important; } }
+  @media (min-width: 1025px) {
+    .distributors .hero-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg) !important; } }
+
+@media (min-width: 1200px) {
+	.last-block {
+		background-attachment: fixed;
+		background-position: center;
+	}
+}
+
 .distributors .last-block {
-  background-image: url(https://s3.amazonaws.com/metropolee/dist-2-800.jpg) !important; }
+  background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg) !important; }
   @media (min-width: 600px) {
     .distributors .last-block {
-      background-image: url(https://s3.amazonaws.com/metropolee/dist-2-1280.jpg) !important; } }
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg) !important; } }
   @media (min-width: 1025px) {
     .distributors .last-block {
-      background-image: url(https://s3.amazonaws.com/metropolee/dist-2-2560.jpg) !important; } }
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg) !important; } }
+
+.certified .hero-block {
+  background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg) !important; }
+  @media (min-width: 600px) {
+    .certified .hero-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg) !important; } }
+  @media (min-width: 1025px) {
+    .certified .hero-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg) !important; } }
+      
+.certified .last-block {
+  background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg) !important; }
+  @media (min-width: 600px) {
+    .certified .last-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg) !important; } }
+  @media (min-width: 1025px) {
+    .certified .last-block {
+      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg) !important; } }
 
 /* @end */
 
