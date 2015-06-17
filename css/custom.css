@@ -4,6 +4,10 @@
 
 /* This css stinks. This has been put up in a hurry to make up for a markup that I cannot control and that has been done by someone who doesn't care shit about other people working on their code. The idea is to have everything put back into the main stylesheet and cleaned up properly afterwards. Now I can't even access the main css! */
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 .menu-trigger > span {
 	text-indent: 99999px;
 	line-height: 0;
@@ -110,7 +114,8 @@ h2 {
 
 #frm-signup label,
 #frm-signup input,
-#frm-signup p {
+#frm-signup p,
+.signup .panel label {
 	color: white !important;
 }
 
@@ -231,7 +236,10 @@ h2 {
 #joinForm input,
 #member-login-form input,
 #frm-signup input,
-#frm-signup select {
+#frm-signup select,
+.signup #form1 select,
+.signup .panel input,
+.signup .panel select {
 	height: auto;
 	padding: 0.3rem 0 0.5rem;
 	background: transparent;
@@ -244,7 +252,9 @@ h2 {
 	font-size: 1rem;
 }
 
-#frm-signup select {
+#frm-signup select,
+.signup #form1 select,
+.signup .panel select {
 	-webkit-appearance: none;
 	-moz-appearance: none;
 	background-image: url("//metropolee.s3.amazonaws.com/images/icons/triangle.svg");
@@ -349,7 +359,11 @@ h2 {
 #joinForm .btn-primary,
 #member-login-form .btn,
 #member-login-form .btn-lg,
-#frm-signup .btn-primary {
+#frm-signup .btn-primary,
+.cart-details .btn,
+.container-iframe > #form2 > input[type=submit],
+.signup #form1 input[type=submit].btn,
+.signup .panel .btn {
 	display: inline-block;
 	width: auto;
 	margin: 40px auto 0;
@@ -417,7 +431,7 @@ footer nav {
 .container footer {
 	position: absolute;
 	left: 0;
-	
+	width: 100%;
 }
 
 small img {
@@ -432,6 +446,273 @@ small img {
 	margin: 0 auto;
 	background: transparent !important;
 }
+
+/* @group SIGNUP CART */
+
+#productframe {
+	overflow: hidden;
+	height: 100%;
+	min-height: 1200px;
+	width: 100%;
+	margin-bottom: 50px;
+}
+
+@media (min-width: 1000px) {
+	#productframe {
+		min-height: 850px;
+	}
+}
+
+body {
+	background: transparent;
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+#OMN_CartBar {
+	color: white;
+	background-color: #4E5051;
+}
+
+#shoppingCartBar {
+	background-color: #4E5051;
+	border: none;
+}
+
+#shoppingCartBar > .row > .col-xs-12.col-sm-8 {
+	min-height: 130px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-webkit-flex-direction: column;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	-webkit-align-content: center;
+	    -ms-flex-line-pack: center;
+	        align-content: center;
+}
+
+@media (min-width: 900px) {
+	#shoppingCartBar > .row > .col-xs-12.col-sm-8 {
+		min-height: 200px;
+	}
+}
+
+#shoppingCartBar .input-group {
+	position: relative;
+	width: 100%;
+}
+
+#shoppingCartBar input.form-control {
+	width: 100%;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid white;
+	border-radius: 0;
+	color: white;
+	box-shadow: none;
+	padding-left: 0;
+	padding-right: 50px;
+}
+
+#shoppingCartBar input[type=submit] {
+	display: inline-block;
+	position: absolute;
+	bottom: 0;
+	right: -3px;
+	width: 70px;
+	height: 50px;
+	background: transparent;
+	background-image: url(//metropolee.s3.amazonaws.com/images/icons/search.svg);
+	background-repeat: no-repeat;
+	background-position: 80% center;
+	background-size: 23px;
+	border-radius: 0;
+	border: none;
+	text-indent: 99999px;
+	z-index: 3;
+}
+
+#shoppingCartBar .cart-details {
+	background-color: rgba(98, 190, 125, 1);
+	border: none;
+	padding: 25px 15px 30px;
+}
+
+.cart-details span,
+.cart-details strong {
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.cart-details a {
+	font-size: 12px;
+	display: inline-block;
+	color: white;
+	margin-top: 3px;
+}
+
+#cartTotalWrapper strong,
+#cartTotalWrapper span {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.btn > span {
+	font-size: inherit !important;
+}
+
+.cart-details .btn,
+.container-iframe > #form2 > input[type=submit],
+.signup #form1 input[type=submit].btn {
+	color: rgba(98, 190, 125, 1) !important;
+	border: 3px solid white !important;
+	margin-top: 30px !important;
+	margin-right: 8px;
+	padding: .6em 1.4em;
+}
+
+#shoppingCartBar .btn.btn-primary,
+.container-iframe > #form2 > input[type=submit],
+.signup #form1 input[type=submit].btn {
+	border: 3px solid white !important;
+	background: transparent !important;
+	color: white !important;
+}
+
+body > legend {
+	color: white;
+	border: none;
+	text-transform: uppercase;
+	font-size: 20px;
+	text-align: center;
+	margin: 100px 0;
+}
+
+body > .container-iframe {
+	color: white;
+}
+
+.container-iframe > #form2 > .row > .col-sm-2.col-xs-12 {
+	text-align: center;
+}
+
+.container-iframe .product-image {
+	display: inline-block;
+	border: 6px solid white;
+	border-radius: 0;
+	background-size: 100%;
+}
+
+.container-iframe > #form2 > .row > .col-sm-10.col-xs-12 {
+	font-size: 16px;
+	line-height: 1.7;
+}
+
+.container-iframe > #form2 > .row > .col-sm-10.col-xs-12 a {
+	display: inline-block;
+	margin-bottom: 20px;
+	font-size: 20px;
+	font-weight: bold;
+	color: white;
+}
+
+.container-iframe > #form2 > hr {
+	border-color: white;
+	margin: 50px 0 0;
+}
+
+.container-iframe > #form2 > .text-right a {
+	color: white;
+	
+}
+
+/***************** CART CHECKOUT PAGE *****************/
+
+.signup #form1 {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	color: white;
+	font-size: 18px;
+}
+
+.signup #form1 .table-responsive {
+	color: white;
+	text-align: center;
+	border: none;
+}
+
+.signup #form1 table.table th {
+	font-weight: normal;
+	border: none;
+	text-align: center;
+	padding: 1.3em .8em;
+}
+
+.signup #form1 table.table td {
+	border: none;
+	background-color: rgba(98, 190, 125, 1);
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+	padding: 2.5em .8em;
+}
+
+.signup #form1 table.table tr > td:nth-child(2) {
+	text-align: left;
+}
+
+.signup #form1 table.table tr > td:last-child {
+	font-weight: bold;
+}
+
+.signup #form1 > .row {
+	margin: 40px 0;
+}
+
+.signup #form1 select {
+	font-size: inherit;
+}
+
+.signup #form1 a.btn {
+	background: transparent !important;
+	border: none;
+	font-size: 14px;
+	text-decoration: underline;
+	display: none;
+}
+
+.signup #form1 input[type=submit].btn {
+	font-size: 16px;
+}
+
+/***************** CREDIT CARD INFO *****************/
+
+.signup .panel {
+	max-width: 700px;
+	margin: 0 auto;
+	background: transparent;
+	border: none;
+	box-shadow: none;
+}
+
+.signup .panel .form-date {
+	width: 45%;
+	float: left;
+}
+
+.signup .panel .form-date:last-child {
+	float: right;
+}
+
+/* @end */
 
 /* @group CHANGES TO NON-SYSTEM PAGES */
 
@@ -536,8 +817,8 @@ small img {
 
 /* @group FAQ FIXES */
 
-.faq .hero-block {
+/*.faq .hero-block {
 	min-height: 133px !important;
-}
+}*/
 
 /* @end */
