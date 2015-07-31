@@ -28,6 +28,10 @@ h2 {
 	margin: 1.7em 0 .8em;
 }
 
+p {
+	margin: 1rem auto;
+}
+
 .generic .generic-link {
 	font-weight: normal !important;
 }
@@ -724,10 +728,6 @@ body > .container-iframe {
 	text-align: center;
 	min-height: 250px;
 	padding-top: 50px;
-}
-
-.homepage .last-block > div:last-child {
-	float: left;
 }
 
 .home-main {
