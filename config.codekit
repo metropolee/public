@@ -1,6 +1,6 @@
 {
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
-"creatorBuild": "19033",
+"creatorBuild": "19051",
 "files": {
 	"\/_footer.kit": {
 		"fileType": 2048,
@@ -28,6 +28,17 @@
 		"outputAbbreviatedPath": "\/public\/_header.html",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
+		},
+	"\/_scripts_old.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/_scripts_old.js",
+		"outputAbbreviatedPath": "\/public\/js\/_scripts_old-compiled.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 0,
+		"syntaxCheckerStyle": 1
 		},
 	"\/about.kit": {
 		"fileType": 2048,
@@ -155,6 +166,15 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/countries.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/countries.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/distributors.kit": {
 		"fileType": 2048,
 		"ignore": 0,
@@ -170,6 +190,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/faq.kit",
 		"outputAbbreviatedPath": "\/public\/faq.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/files.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/files.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -197,6 +226,15 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/login.kit",
 		"outputAbbreviatedPath": "\/public\/login.html",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/mab.html": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/mab.html",
+		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
@@ -241,6 +279,15 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/css\/custom.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/css\/style-gz.css": {
+		"fileType": 16,
+		"ignore": 1,
+		"ignoreWasSetByUser": 1,
+		"inputAbbreviatedPath": "\/public\/css\/style-gz.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -290,7 +337,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/favicons\/favicon-152.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/favicons\/favicon-32.png": {
 		"fileType": 32768,
@@ -301,7 +348,25 @@
 		"outputAbbreviatedPath": "\/public\/images\/favicons\/favicon-32.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
+		},
+	"\/public\/images\/icons\/check-white.svg": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/check-white.svg",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/images\/icons\/check.svg": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/check.svg",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
 		},
 	"\/public\/images\/icons\/icons-dist-1.svg": {
 		"fileType": 8192,
@@ -393,6 +458,33 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/images\/icons\/YouTube-icon-dark.svg": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/YouTube-icon-dark.svg",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/images\/icons\/youtube-icon-full_color.svg": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/youtube-icon-full_color.svg",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/images\/icons\/YouTube_light_color_icon.svg": {
+		"fileType": 8192,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/images\/icons\/YouTube_light_color_icon.svg",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/images\/img\/about-1280.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -402,7 +494,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/about-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/about-2560.jpg": {
 		"fileType": 16384,
@@ -413,7 +505,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/about-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/about-800.jpg": {
 		"fileType": 16384,
@@ -424,7 +516,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/about-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-1-1280.jpg": {
 		"fileType": 16384,
@@ -435,7 +527,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-1-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-1-2560.jpg": {
 		"fileType": 16384,
@@ -446,7 +538,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-1-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-1-800.jpg": {
 		"fileType": 16384,
@@ -457,7 +549,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-1-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-2-1280.jpg": {
 		"fileType": 16384,
@@ -468,7 +560,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-2-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-2-2560.jpg": {
 		"fileType": 16384,
@@ -479,7 +571,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-2-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-2-800.jpg": {
 		"fileType": 16384,
@@ -490,7 +582,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/cert-2-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/cert-img-1.svg": {
 		"fileType": 8192,
@@ -510,6 +602,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/images\/img\/certified.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 304739,
+		"inputAbbreviatedPath": "\/public\/images\/img\/certified.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/certified.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/public\/images\/img\/dist-1-1280.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -519,7 +622,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-1-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/dist-1-2560.jpg": {
 		"fileType": 16384,
@@ -530,7 +633,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-1-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/dist-1-800.jpg": {
 		"fileType": 16384,
@@ -541,7 +644,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-1-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/dist-2-1280.jpg": {
 		"fileType": 16384,
@@ -552,7 +655,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-2-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/dist-2-2560.jpg": {
 		"fileType": 16384,
@@ -563,7 +666,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-2-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/dist-2-800.jpg": {
 		"fileType": 16384,
@@ -574,7 +677,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/dist-2-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/distr-img-1.svg": {
 		"fileType": 8192,
@@ -594,6 +697,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/images\/img\/distributor.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 324366,
+		"inputAbbreviatedPath": "\/public\/images\/img\/distributor.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/distributor.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/public\/images\/img\/graph.svg": {
 		"fileType": 8192,
 		"ignore": 0,
@@ -612,7 +726,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/home-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/home-2560.jpg": {
 		"fileType": 16384,
@@ -623,7 +737,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/home-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/home-800.jpg": {
 		"fileType": 16384,
@@ -634,7 +748,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/home-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/home-img-1.svg": {
 		"fileType": 8192,
@@ -654,6 +768,94 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/images\/img\/home\/_video-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 401868,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/_video-bg.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/_video-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/businessman.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 374532,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/businessman.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/businessman.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/businessman.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 662626,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/businessman.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/businessman.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/client.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 577049,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/client.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/client.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/client.png": {
+		"fileType": 32768,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 486292,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/client.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/client.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/public\/images\/img\/home\/money.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 171098,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/money.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/money.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/people.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 1.25348e+06,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/people.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/people.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/video-bg.jpg": {
+		"fileType": 16384,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 256215,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/video-bg.jpg",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/video-bg.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/public\/images\/img\/iphone6.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -663,7 +865,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/iphone6.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/prod-1-1280.jpg": {
 		"fileType": 16384,
@@ -674,7 +876,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/prod-1-1280.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/prod-1-2560.jpg": {
 		"fileType": 16384,
@@ -685,7 +887,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/prod-1-2560.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/prod-1-800.jpg": {
 		"fileType": 16384,
@@ -696,7 +898,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/prod-1-800.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/img\/sabrina.jpg": {
 		"fileType": 16384,
@@ -707,7 +909,7 @@
 		"outputAbbreviatedPath": "\/public\/images\/img\/sabrina.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"processed": 0
+		"processed": 1
 		},
 	"\/public\/images\/logo-footer.svg": {
 		"fileType": 8192,
@@ -736,17 +938,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/js\/scripts-compiled.js": {
-		"fileType": 64,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/public\/js\/scripts-compiled.js",
-		"outputAbbreviatedPath": "\/public\/js\/scripts-compiled-compiled.js",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
-		"syntaxCheckerStyle": 1
-		},
 	"\/public\/login.html": {
 		"fileType": 8192,
 		"ignore": 1,
@@ -765,11 +956,38 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/public\/rattotest.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/rattotest.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
 	"\/public\/signup.html": {
 		"fileType": 8192,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/public\/signup.html",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/style-temp-gz.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/style-temp-gz.css",
+		"outputAbbreviatedPath": "No Output Path",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0
+		},
+	"\/public\/style-temp.css": {
+		"fileType": 16,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/public\/style-temp.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
@@ -821,7 +1039,7 @@
 		"outputAbbreviatedPath": "\/public\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 3,
 		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"useLibsass": 1
@@ -844,6 +1062,24 @@
 		}
 	},
 "hooks": [
+	{
+		"enabled": 1,
+		"hookType": 1,
+		"name": "Hook #1",
+		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGY2RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1VaXmBVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFpzdHlsZS5zY3Nz0issTU5fEBlOU0NvbnN0YW50VmFsdWVFeHByZXNzaW9uo00vMNQLUFFSU0koVFpOU01vZGlmaWVyV05TRmxhZ3NeTlNPcGVyYXRvclR5cGWAEhAG0issVldfEBtOU01hdGNoaW5nUHJlZGljYXRlT3BlcmF0b3KkVlhZMF8QGU5TU3RyaW5nUHJlZGljYXRlT3BlcmF0b3JfEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0issW1xfEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjW10wW05TUHJlZGljYXRl0issQV+iQTDSKyxhYl8QE05TQ29tcG91bmRQcmVkaWNhdGWjYV0wXxAPTlNLZXllZEFyY2hpdmVy0WVmVHJvb3SAAQAIABEAGgAjAC0AMgA3AFAAVgBdAHcAiQCQAJIAlACWAJsApgCoAKoArAC1AMkA3ADyAPQA9gD4APoBBQEPAR4BMQE9AT8BQQFDAUUBRwFUAVkBWwFdAWIBbQF2AYkBjQGaAaMBqAGqAawBrgG1Ab8BwQHDAcUB0wHYAfcB+wIAAg8CEwIbAiACNgI7AlICWQJrAm0CbwJxAnwCgQKdAqECqgK1Ar0CzALOAtAC1QLzAvgDFAMqAy8DRwNLA1cDXANfA2QDegN+A5ADkwOYAAAAAAAAAgEAAAAAAAAAZwAAAAAAAAAAAAAAAAAAA5o=",
+		"runOrder": 0,
+		"scriptSourceString": "gzip -9 -c \/Users\/Emanuele\/Documents\/Copy\/dev\/metropolee\/public\/css\/style.css > \/Users\/Emanuele\/Documents\/Copy\/dev\/metropolee\/public\/css\/style-gz.css",
+		"uuidString": "847BBA0A-6C5F-4EB9-A57E-BB7C02C25E57"
+		},
+	{
+		"enabled": 1,
+		"hookType": 1,
+		"name": "Hook #2",
+		"predicateDataBase64Encoded": "YnBsaXN0MDDUAQIDBAUGY2RYJHZlcnNpb25YJG9iamVjdHNZJGFyY2hpdmVyVCR0b3ASAAGGoK8QFgcIDxQcJicqMTU6Oz5CRktMT1VaXmBVJG51bGzTCQoLDA0OXxAXTlNDb21wb3VuZFByZWRpY2F0ZVR5cGVfEA9OU1N1YnByZWRpY2F0ZXNWJGNsYXNzEAKAAoAV0hALERNaTlMub2JqZWN0c6ESgAOAFNQLFRYXGBkaG18QEU5TUmlnaHRFeHByZXNzaW9uXxAQTlNMZWZ0RXhwcmVzc2lvbl8QE05TUHJlZGljYXRlT3BlcmF0b3KAE4AOgASAEdUdHh8gCyEiIyQlWU5TT3BlcmFuZF5OU1NlbGVjdG9yTmFtZV8QEE5TRXhwcmVzc2lvblR5cGVbTlNBcmd1bWVudHOABoAFEAOACIANXHZhbHVlRm9yS2V5OtIfCygpEAGAB9IrLC0uWiRjbGFzc25hbWVYJGNsYXNzZXNfEBBOU1NlbGZFeHByZXNzaW9uoy0vMFxOU0V4cHJlc3Npb25YTlNPYmplY3TSEAsyNKEzgAmADNMLHzY3ODlZTlNLZXlQYXRogAsQCoAKXWlucHV0RmlsZW5hbWXSKyw8PV8QHE5TS2V5UGF0aFNwZWNpZmllckV4cHJlc3Npb26jPC8w0issP0BeTlNNdXRhYmxlQXJyYXmjP0EwV05TQXJyYXnSKyxDRF8QE05TS2V5UGF0aEV4cHJlc3Npb26kQ0UvMF8QFE5TRnVuY3Rpb25FeHByZXNzaW9u00cfC0hJSl8QD05TQ29uc3RhbnRWYWx1ZYAPEACAEFpzY3JpcHRzLmpz0issTU5fEBlOU0NvbnN0YW50VmFsdWVFeHByZXNzaW9uo00vMNQLUFFSU0koVFpOU01vZGlmaWVyV05TRmxhZ3NeTlNPcGVyYXRvclR5cGWAEhAG0issVldfEBtOU01hdGNoaW5nUHJlZGljYXRlT3BlcmF0b3KkVlhZMF8QGU5TU3RyaW5nUHJlZGljYXRlT3BlcmF0b3JfEBNOU1ByZWRpY2F0ZU9wZXJhdG9y0issW1xfEBVOU0NvbXBhcmlzb25QcmVkaWNhdGWjW10wW05TUHJlZGljYXRl0issQV+iQTDSKyxhYl8QE05TQ29tcG91bmRQcmVkaWNhdGWjYV0wXxAPTlNLZXllZEFyY2hpdmVy0WVmVHJvb3SAAQAIABEAGgAjAC0AMgA3AFAAVgBdAHcAiQCQAJIAlACWAJsApgCoAKoArAC1AMkA3ADyAPQA9gD4APoBBQEPAR4BMQE9AT8BQQFDAUUBRwFUAVkBWwFdAWIBbQF2AYkBjQGaAaMBqAGqAawBrgG1Ab8BwQHDAcUB0wHYAfcB+wIAAg8CEwIbAiACNgI7AlICWQJrAm0CbwJxAnwCgQKdAqECqgK1Ar0CzALOAtAC1QLzAvgDFAMqAy8DRwNLA1cDXANfA2QDegN+A5ADkwOYAAAAAAAAAgEAAAAAAAAAZwAAAAAAAAAAAAAAAAAAA5o=",
+		"runOrder": 2,
+		"scriptSourceString": "gzip -9 -c \/Users\/Emanuele\/Documents\/Copy\/dev\/metropolee\/public\/js\/scripts-compiled.js > \/Users\/Emanuele\/Documents\/Copy\/dev\/metropolee\/public\/js\/scripts-compiled-gz.js",
+		"uuidString": "28B6CF65-81AD-4ABD-AF00-3B92221BF75E"
+		}
 	],
 "lastSavedByUser": "Emanuele Feliziani",
 "manualImportLinks": {
@@ -865,7 +1101,7 @@
 "projectAttributes": {
 	"bowerAbbreviatedPath": "",
 	"displayValue": "metropolee",
-	"displayValueWasSetByUser": 0,
+	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/public\/images\/favicons\/favicon-152.png"
 	},
 "projectSettings": {
@@ -1348,10 +1584,6 @@
 			}
 		},
 	"jsLintFlags2": {
-		"ass": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"bitwise": {
 			"active": 0,
 			"flagValue": -1
@@ -1360,15 +1592,7 @@
 			"active": 1,
 			"flagValue": -1
 			},
-		"closure": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"continue": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"debug": {
+		"couch": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1376,75 +1600,27 @@
 			"active": 0,
 			"flagValue": -1
 			},
-		"eqeq": {
+		"es6": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"evil": {
+		"eval": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"forin": {
+		"for": {
 			"active": 0,
 			"flagValue": -1
-			},
-		"indent": {
-			"active": 0,
-			"flagValue": 4
 			},
 		"maxlen": {
 			"active": 0,
 			"flagValue": 150
 			},
-		"newcap": {
-			"active": 0,
-			"flagValue": -1
-			},
 		"node": {
 			"active": 0,
 			"flagValue": -1
 			},
-		"nomen": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"plusplus": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"properties": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"regexp": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"rhino": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sloppy": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"stupid": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"sub": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"todo": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"unparam": {
-			"active": 0,
-			"flagValue": -1
-			},
-		"vars": {
+		"this": {
 			"active": 0,
 			"flagValue": -1
 			},
@@ -1514,7 +1690,7 @@
 	"sassUseLibsass": 1,
 	"shouldRunAutoprefixer": 1,
 	"shouldRunBless": 0,
-	"skippedItemsString": "node_modules, _logs, .hg, _cache, log, logs, cache, .svn, .git, .esproj, \/metropolee.esproj, \/bower_components\/backstopjs",
+	"skippedItemsString": "node_modules, \/public\/js, _logs, .hg, _cache, log, logs, cache, .svn, .git, .esproj, \/metropolee.esproj, \/bower_components\/backstopjs",
 	"slimAutoOutputPathEnabled": 1,
 	"slimAutoOutputPathFilenamePattern": "*.html",
 	"slimAutoOutputPathRelativePath": "",
