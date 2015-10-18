@@ -377,7 +377,11 @@ header {
 	left: 0;
 	top: 40px;
 	width: 100%;
-	z-index: 10001000;
+	z-index: 10;
+}
+
+.smartbanner + header {
+	top: 85px;
 }
 
 .logo {
@@ -625,6 +629,7 @@ header {
 	background-size: cover;
 	background-position: center;
 	color: $white;
+	text-shadow: 0 1px 4px rgba(30,30,30,.4);
 	
 	p {
 		margin-bottom: 100px;
@@ -634,14 +639,14 @@ header {
 		margin: 30px auto;
 	}
 	
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
+	background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg);
 	
 	@include tablet {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg);
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg);
 	}
 	
 	@include desktop {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg);
 		background-attachment: fixed;
 	}
 }
@@ -707,7 +712,7 @@ header {
 		display: block;
 		position: relative;
 		width: auto;
-		max-width: 60%;
+		max-width: 85%;
 		margin: 0 auto;
 		z-index: 1;
 		
@@ -753,7 +758,7 @@ header {
 	}
 	
 	.square-right {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/video-bg.jpg);
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg);
 		background-size: cover;
 		background-position: center;
 		text-align: center;
