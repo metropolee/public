@@ -441,12 +441,6 @@ header {
 	transform: translateY(8px);
 }
 
-.menu-open .menu-trigger > span,
-.menu-open .menu-trigger > span::after,
-.menu-open .menu-trigger > span::before {
-	
-}
-
 .menu-container {
 	position: fixed;
 	top: 0;
@@ -575,11 +569,11 @@ header {
 }
 
 .home-main {
+	position: relative;
 	padding-top: 130px;
-	padding-bottom: 50px;
 	color: $white;
 	background-color: $red;
-	background: $red url('//metropolee.s3.amazonaws.com/images/img/home-img-1.svg') no-repeat;
+	/*background: $red url('//metropolee.s3.amazonaws.com/images/img/home-img-1.svg') no-repeat;*/
 	background-size: auto 90%;
 	background-position: -80% bottom;
 	text-align: left;
@@ -607,8 +601,13 @@ header {
 	}*/
 	
 	@include tablet {
-		padding-top: 200px;
-		background-position: 160% bottom;
+		padding-top: 120px !important;
+		background-position: 700px bottom;
+		> div {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-end;
+		}
 	
 		.button {
 			width: auto;
@@ -616,26 +615,58 @@ header {
 		}
 	}
 	
-	@media (min-width: 1024px) {
-		background-position: 90% bottom;
-	}
-	
 	@include desktop {
-		padding-top: 250px;
-		background-position: 700px bottom;
-	}
-	
-	@media (min-width: 1600px) {
-		background-position: 75% bottom;
-	}
-	
-	@media (min-width: 2000px) {
-		background-position: 65% bottom;
+		
 	}
 }
 
 .home-main__left {
 	max-width: 550px;
+	margin-bottom: 50px;
+	
+	@include tablet {
+		width: 100%;
+	}
+	
+	@include desktop {
+		width: 45%;
+	}
+}
+
+.home-main__right {
+	position: relative;
+	
+	img {
+		position: relative;
+		display: block;
+		margin: 2rem auto 0;
+		max-width: 70%;
+		z-index: 1;
+		
+		&:not(:first-child) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 0;
+			transform: translate3d(-20%,0,0);
+		}
+		&:last-child {
+			left: auto;
+			right: 0;
+			transform: translate3d(25%,0,0);
+		}
+	}
+	
+	@include tablet {
+		width: 45%;
+		position: absolute;
+		bottom: 0;
+		right: -15%;
+	}
+	@include desktop {
+		position: relative;
+		right: 0;
+	}
 }
 
 .video-section {

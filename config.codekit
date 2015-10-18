@@ -805,6 +805,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/public\/images\/img\/home\/header-app-1.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 200901,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/header-app-1.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/header-app-1.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/header-app-2.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 218887,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/header-app-2.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/header-app-2.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/public\/images\/img\/home\/home-video-1280.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -834,6 +856,17 @@
 		"initialSize": 137347,
 		"inputAbbreviatedPath": "\/public\/images\/img\/home\/home-video-800.jpg",
 		"outputAbbreviatedPath": "\/public\/images\/img\/home\/home-video-800.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/home\/iphone.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 496518,
+		"inputAbbreviatedPath": "\/public\/images\/img\/home\/iphone.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/home\/iphone.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
