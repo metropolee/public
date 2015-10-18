@@ -474,6 +474,8 @@ header {
 .menu-voice {
 	padding: 10px;
 	margin: 10px auto;
+	transition: all .5s $easing .4s;
+	transform: translate3d(80%,0,0);
 	
 	> a {
 		color: $white;
@@ -486,6 +488,7 @@ header {
 	@include desktop {
 		display: inline-block;
 		margin: 0 5px;
+		transform: translate3d(0,0,0);
 		
 		&:last-child {
 			display: inline-block;
@@ -539,6 +542,16 @@ header {
 	
 	.menu-container {
 		transform: translate3d(4%,0,0);
+	}
+	
+	.menu-voice {
+		transition-delay: 0;
+		transform: translate3d(0,0,0);
+		@for $i from 1 through 7 {
+			&:nth-child(#{$i}) {
+				transition-delay: $i * .05s;
+			}
+		}
 	}
 	
 	.to-blur {
