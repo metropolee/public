@@ -130,7 +130,9 @@ p {
 	font-size: 12px;
 }
 
-#frm-signup .error {
+#frm-signup .error,
+label.error,
+.signup .panel label.error {
 	color: #f66060 !important;
 }
 
