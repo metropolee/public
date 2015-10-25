@@ -64,15 +64,22 @@ p {
 @media (min-width: 1025px) {
 	.members div.to-blur,
 	.signup div.to-blur {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg); } }
+		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+		background-attachment: fixed;
+		background-position: center;
+	}
+}
 
 .members .alert,
-.signup .alert {
+.signup .alert,
+.alert.alert-info.autoship-override-span /* Autoship page */ {
 	margin: 30px 15px !important;
 	border-radius: 0;
 	border: none;
 	color: rgba(255, 255, 255, .8);
 	background-color: rgba(218, 237, 246, .3);
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
 }
 
 .members .alert-danger,
@@ -81,9 +88,15 @@ p {
 	background-color: rgba(255, 50, 50, .3);
 }
 
+.alert.alert-info.autoship-override-span span /* Autoship page */ {
+	color: inherit !important;
+	text-decoration: underline;
+}
+
 @media (min-width: 600px) {
 	.members .alert,
-	.signup .alert {
+	.signup .alert,
+	.alert.alert-info.autoship-override-span /* Autoship page */ {
 		max-width: 470px;
 		margin-left: auto !important;
 		margin-right: auto !important;
@@ -105,11 +118,16 @@ p {
 
 .form-wrapper.signup h5,
 .signup legend,
+.members > .to-blur > .container > legend:first-child, /* Forgot password title – members/password.asp */
 .signup .container h4 {
 	font-size: 20px;
 	color: white;
 	text-transform: uppercase;
 	font-weight: 300 !important;
+}
+
+.signup legend {
+	margin-top: 40px;
 }
 
 #frm-signup {
@@ -118,10 +136,28 @@ p {
 	margin: 0 auto;
 }
 
+#frm-signup > .form-wrapper > legend + div > div.form-group label + p.form-control-static {
+	/* Fix "Signing Up As" in signup2.asp */
+	display: inline;
+	padding-left: 40px;
+	font-weight: bold;
+}
+
+#frm-signup > div.form-group > label + div > p.form-control-static {
+	/* Fix "Sponsor:" text in signup.asp */
+	display: inline;
+}
+
+#frm-signup > .form-wrapper .alert.alert-info {
+	/* Removes unnecessary alerts in signup2.asp */
+	display: none;
+}
+
 #frm-signup label,
 #frm-signup input,
 #frm-signup p,
-.signup .panel label {
+.signup .panel label,
+.members form[action^="/members/password.asp"] {
 	color: white !important;
 }
 
@@ -143,7 +179,8 @@ label.error,
 }
 
 #joinForm,
-#member-login-form {
+#member-login-form,
+.members > .to-blur > .container {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -232,9 +269,11 @@ label.error,
 }
 
 #joinForm div,
-#member-login-form > div {
+#member-login-form > div,
+.members form[action^="/members/password.asp"] {
 	max-width: 500px;
-	margin: auto !important;
+	margin-left: auto !important;
+	margin-right: auto !important;
 }
 
 .col-xs-12.col-sm-6 {
@@ -252,10 +291,11 @@ select > option {
 .signup #form1 select,
 .signup .panel input,
 .signup .panel select,
-.form-group > select[name=categoryid] {
+.form-group > select[name=categoryid],
+.members form[action^="/members/password.asp"] input {
 	height: auto;
-	padding: 0.3rem 0 0.5rem;
-	background: transparent;
+	padding: 0.5rem .7rem 0.5rem;
+	background-color: rgba(0, 0, 0, .15);
 	border: none !important;
 	border-bottom: 1px solid white !important;
 	border-radius: 0;
@@ -263,6 +303,36 @@ select > option {
 	color: white;
 	line-height: 1.3;
 	font-size: 1em;
+	transition: background-color .2s;
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+}
+
+.form-group > select[name=categoryid],
+.form-group > select[name=categoryid]:focus {
+	background: transparent;
+	font-size: 16px;
+}
+
+.members form[action^="/members/password.asp"] > div + div > div.col-md-3 {
+	width: 100%;
+}
+
+.members form[action^="/members/password.asp"] label,
+.members form[action^="/members/password.asp"] input {
+	color: white;
+	float: left;
+}
+
+#joinForm input:focus,
+#member-login-form input:focus,
+#frm-signup input:focus,
+#frm-signup select:focus,
+.signup #form1 select:focus,
+.signup .panel input:focus,
+.signup .panel select:focus,
+.members form[action^="/members/password.asp"] input:focus {
+	background-color: rgba(255, 255, 255, .2);
 }
 
 #frm-signup select,
@@ -316,11 +386,15 @@ select > option {
 }
 
 #joinForm label,
-#member-login-form label {
+#member-login-form label,
+#frm-signup label {
+	display: block;
+	clear: both;
 	float: left;
+	margin-bottom: 2px !important;
 	font-size: 1rem;
+	vertical-align: bottom !important;
 	color: rgba(255, 255, 255, .7);
-	display: inline;
 }
 
 #frm-signup > .control-label {
@@ -349,19 +423,24 @@ select > option {
 }
 
 .terms-conditions {
+	clear: both;
 	border-radius: 0;
 	background-color: rgba(218, 237, 246, .3);
 	border: none;
 	color: rgba(255, 255, 255, .8);
 	box-shadow: none;
 	height: 300px;
-	overflow: auto;
+	overflow: hidden;
 	-webkit-overflow-scrolling:touch
 }
 
 .terms-conditions > p {
 	margin: 0 !important;
 	padding: 0 !important;
+}
+
+.signup .terms-conditions iframe {
+	height: 270px !important;
 }
 
 #frm-signup .col-xs-12.col-sm-offset-2.col-sm-6 {
@@ -376,7 +455,9 @@ select > option {
 .cart-details .btn,
 .container-iframe > #form2 > input[type=submit],
 .signup #form1 input[type=submit].btn,
-.signup .panel .btn {
+.signup .panel .btn,
+.members form[action^="/members/password.asp"] .btn,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .btn {
 	display: inline-block;
 	width: auto;
 	margin: 40px auto 0;
@@ -440,17 +521,28 @@ form#form[action^="/signup/signup3_autoshipadd.asp"] {
 #txtAdditionalInfo_3_country {
 	display: inline-block;
 	float: left;
-	width: 30px;
-	padding-top: .3rem;	
+	width: 50px;
+	padding-top: .5rem;
+	padding-bottom: .5rem;
 	text-align: center;
-	line-height: 1.3;
+	line-height: 1.35;
+	border-bottom: 1px solid #FFFFFF;
+	clear: left;
+	-webkit-backdrop-filter: blur(6px);
+	backdrop-filter: blur(6px);
+	background-color: rgba(0,0,0,.15);
 }
 
 #AdditionalInfo_3 {
 	display: inline-block;
 	float: left;
-	width: -webkit-calc(100% - 30px);
-	width: calc(100% - 30px);
+	width: -webkit-calc(100% - 50px);
+	width: calc(100% - 50px);
+}
+/***************** END TAX ID *****************/
+
+#frm-signup .password-meter + br {
+	display: none;
 }
 
 footer {
@@ -635,7 +727,8 @@ body {
 
 .cart-details .btn,
 .container-iframe > #form2 > input[type=submit],
-.signup #form1 input[type=submit].btn {
+.signup #form1 input[type=submit].btn,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .btn {
 	color: rgba(98, 190, 125, 1) !important;
 	border: 3px solid white !important;
 	margin-top: 30px !important;
@@ -645,24 +738,35 @@ body {
 
 #shoppingCartBar .btn.btn-primary,
 .container-iframe > #form2 > input[type=submit],
-.signup #form1 input[type=submit].btn {
+.signup #form1 input[type=submit].btn,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .btn {
 	border: 3px solid white !important;
 	background: transparent !important;
 	color: white !important;
 }
 
-form[action="/shoppingcartmodify.asp"] {
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .btn {
+	float: right;
+}
+
+form[action="/shoppingcartmodify.asp"],
+#helpframe + div + div#OMN_CartBar + script + legend + div.container-iframe > form#form2 > div.row,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row {
 	background-color: rgba(255, 255, 255, .7);
 	padding: 1.5rem .5rem;
 	margin: 1rem auto;
 	color: black;
 }
 
-form[action="/shoppingcartmodify.asp"] > hr {
+form[action="/shoppingcartmodify.asp"] > hr,
+#helpframe + div + div#OMN_CartBar + script + legend + div.container-iframe > form#form2 > hr,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > hr {
 	display: none;
 }
 
-form[action="/shoppingcartmodify.asp"] > .row {
+form[action="/shoppingcartmodify.asp"] > .row,
+#helpframe + div + div#OMN_CartBar + script + legend + div.container-iframe > form#form2 > div.row,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row {
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
@@ -683,7 +787,9 @@ form[action="/shoppingcartmodify.asp"] > .row {
 }
 
 @media (min-width:600px) {
-	form[action="/shoppingcartmodify.asp"] > .row {
+	form[action="/shoppingcartmodify.asp"] > .row,
+	#helpframe + div + div#OMN_CartBar + script + legend + div.container-iframe > form#form2 > div.row,
+	form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row  {
 		-webkit-box-orient: horizontal;
 		-webkit-box-direction: normal;
 		-webkit-flex-direction: row;
@@ -693,20 +799,26 @@ form[action="/shoppingcartmodify.asp"] > .row {
 	}
 }
 
-form[action="/shoppingcartmodify.asp"] .product-image {
+form[action="/shoppingcartmodify.asp"] .product-image,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row .product-image {
+	display: block;
 	margin: 1rem auto;
 	background-size: 100%;
 	border: none;
 	border-radius: 15px;
 }
 
-form[action="/shoppingcartmodify.asp"] .product-title {
+form[action="/shoppingcartmodify.asp"] .product-title,
+.container-iframe #form2 .product-title,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row .product-title {
 	display: block;
 	font-weight: bold;
+	pointer-events: none;
 }
 
 @media (min-width:600px) {
-	form[action="/shoppingcartmodify.asp"] .product-title {
+	form[action="/shoppingcartmodify.asp"] .product-title,
+	form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row .product-title {
 		text-align: left;
 	}
 }
@@ -714,6 +826,12 @@ form[action="/shoppingcartmodify.asp"] .product-title {
 form[action="/shoppingcartmodify.asp"] > .row > div > p,
 form[action="/shoppingcartmodify.asp"] > .row > div > br {
 	display: none;
+}
+
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row .col-xs-9.col-ms-7.col-ms-offset-3.col-sm-3.col-sm-offset-0 {
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 1em;
 }
 
 body > legend {
@@ -729,15 +847,24 @@ body > .container-iframe {
 	color: #b8b4b4;
 }
 
-.container-iframe > #form2 > .row > .col-sm-2.col-xs-12 {
+.container-iframe > #form2 > .row > .col-sm-2.col-xs-12,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row > .col-sm-2.col-xs-12 {
 	text-align: center;
+	min-width: 30%;
 }
 
-.container-iframe .product-image {
-	display: inline-block;
+.container-iframe .product-image,
+form[action^="//metropolee.com/signup/signup3_autoship.asp"] > .row .product-image {
+	display: block;
 	border: 6px solid white;
 	border-radius: 0;
 	background-size: 100%;
+}
+
+#form2 .product-image {
+	min-width: 100px;
+	min-height: 100px;
+	margin: 20px auto;
 }
 
 .container-iframe > #form2 > .row > .col-sm-10.col-xs-12 {
@@ -752,14 +879,23 @@ body > .container-iframe {
 	font-weight: bold;
 }
 
-.container-iframe > #form2 > hr {
+/*.container-iframe > #form2 > hr {
 	border-color: white;
 	margin: 50px 0 0;
+}*/
+
+.container-iframe #form2 p {
+	text-align: center !important;
+}
+
+@media (min-width: 600px) {
+	.container-iframe #form2 p {
+		text-align: left !important;
+	}
 }
 
 .container-iframe > #form2 > .text-right a {
 	color: white;
-	
 }
 
 /***************** CART CHECKOUT PAGE *****************/
@@ -818,6 +954,10 @@ body > .container-iframe {
 
 .signup #form1 input[type=submit].btn {
 	font-size: 16px;
+}
+
+.signup select[name=ShipmentTy] {
+	display: none;
 }
 
 /***************** CREDIT CARD INFO *****************/
@@ -908,3 +1048,7 @@ body > .container-iframe {
 
 /***************** BRUTAL, HORRIBLE THINGS *****************/
 
+/* This hides the "Billing address" label. Brutal as it gets. */
+#frm-signup > .form-wrapper > legend:first-child + div + div.clearfix + legend + div + div > p:first-child {
+	display: none;
+}
