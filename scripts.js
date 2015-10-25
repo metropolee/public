@@ -58,6 +58,21 @@ function handleVideoPlayer() {
 	}
 }
 
+function cleanSignup() {
+	var signupContainer = document.querySelector( '.signup' );
+	function findAncestor ( el, cls ) {
+		while ( ( el = el.parentElement ) && !el.classList.contains( cls ) );
+		return el;
+	}
+	if ( signupContainer ) {
+		var toRemove = signupContainer.querySelectorAll( '#fphone, #cPhone, #wphone, input[name=cellemail], #phonePref' );
+		[].forEach.call( toRemove, function ( el ) {
+			findAncestor( el, 'form-group' ).style.display = 'none';
+		});
+	}
+}
+cleanSignup();
+
 document.addEventListener('DOMContentLoaded', function() {
 	handleVideoPlayer();
 }, false);
