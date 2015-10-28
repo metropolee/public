@@ -867,17 +867,6 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/public\/images\/img\/home\/_iphone.png": {
-		"fileType": 32768,
-		"ignore": 1,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 281015,
-		"inputAbbreviatedPath": "\/public\/images\/img\/home\/_iphone.png",
-		"outputAbbreviatedPath": "\/public\/images\/img\/home\/_iphone.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/public\/images\/img\/home\/_video-bg.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
