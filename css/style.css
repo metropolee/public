@@ -1053,6 +1053,9 @@ header {
     .menu-open .menu-voice:nth-child(7) {
       -webkit-transition-delay: 0.35s;
               transition-delay: 0.35s; }
+    .menu-open .menu-voice:nth-child(8) {
+      -webkit-transition-delay: 0.4s;
+              transition-delay: 0.4s; }
   .menu-open .to-blur {
     -webkit-filter: blur(5px);
             filter: blur(5px); }
