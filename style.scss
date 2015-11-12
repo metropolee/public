@@ -883,6 +883,93 @@ header {
 	}
 }
 
+.links-area {
+	background-image: #5a9fb4;
+	background-image: -webkit-linear-gradient(135deg, #88b7c5 0%, #2c87a3 65%);
+	background-image: -moz-linear-gradient(top left, #88b7c5 0%, #2c87a3 65%);
+	background-image: -ms-linear-gradient(top left, #88b7c5 0%, #2c87a3 65%);
+	background-image: -webkit-gradient(linear, left top, right bottom, color-stop(0, #88b7c5), color-stop(0.65, #2c87a3));
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#88b7c5", endColorstr="#2c87a3",GradientType=1);
+	background-image: linear-gradient(135deg, #88b7c5 0%, #2c87a3 65%);
+	color: $white;
+}
+
+.links-container {
+	text-align: center;
+	
+	a {
+		color: $white;
+		text-decoration: underline;
+	}
+	
+	p {
+		text-align: left;
+	}
+	
+	&:first-child {
+		margin-bottom: 50px;
+	}
+	
+	@include tablet {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 40px 0;
+		text-align: left;
+	}
+}
+
+.links-container.mod-promo .links-container-image {
+	max-width: 40%;
+	height: auto;
+	filter: drop-shadow(0 3px 7px rgba(black, .7));
+	transform: translateZ(0);
+	
+	&:first-child {
+		margin-right: 15px;
+	}
+}
+
+.links-container__smaller a {
+	text-decoration: none;
+}
+
+@include tablet {
+	.links-container__smaller {
+		width: 30%;
+	}
+	
+	.links-container__filler {
+		width: 60%;
+	}
+	
+	.links-container.mod-apps > div:nth-child(2) {
+		text-align: right;
+	}
+}
+
+.app-icon:not(:last-child) {
+	margin-right: 10px;
+}
+
+.stores-badges {
+	display: inline-block;
+	margin-top: 40px;
+	
+	@include tablet {
+		margin-top: 0;
+		margin-left: 40px;
+	}
+}
+
+.presentation-links-area {
+	text-align: center;
+	
+	.presentation-link:last-child {
+		margin-left: 30px;
+	}
+}
+
 /*.green-block {
 	padding-top: 100px;
 	background: url('//metropolee.s3.amazonaws.com/images/img/home-img-2.svg') repeat-x left bottom;
