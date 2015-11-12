@@ -577,7 +577,6 @@ header {
 	background-size: auto 90%;
 	background-position: -80% bottom;
 	text-align: left;
-	text-shadow: 0 0 2px rgba($blue, 1);
 	
 	p {
 		margin-top: 0;
@@ -1570,7 +1569,7 @@ input[type=checkbox] {
 	
 	.hero-block {
 		min-height: 550px;
-		max-height: 70vh;
+		/*max-height: 80vh;*/
 		background-color: $green;
 	}
 	

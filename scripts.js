@@ -41,7 +41,6 @@ function handleVideoPlayer() {
 		
 		[].forEach.call( videoTriggers, function ( videoTrigger ) {
 			if ( videoTrigger ) {
-				console.log(videoTrigger);
 				videoTrigger.addEventListener('click', function( event ) {
 					event.preventDefault();
 					var videoUrl = 'https://www.youtube.com/embed/' +  this.getAttribute( 'href' ).split("/").pop() + '?autoplay=1&showinfo=0&rel=0&wmode=transparent';
