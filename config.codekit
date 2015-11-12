@@ -730,6 +730,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 1
 		},
+	"\/public\/images\/img\/customer-signup-switch.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 62868,
+		"inputAbbreviatedPath": "\/public\/images\/img\/customer-signup-switch.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/customer-signup-switch.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
 	"\/public\/images\/img\/dist-1-1280.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -1167,6 +1178,17 @@
 		"initialSize": 11322,
 		"inputAbbreviatedPath": "\/public\/images\/img\/prod-1-800.jpg",
 		"outputAbbreviatedPath": "\/public\/images\/img\/prod-1-800.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 1
+		},
+	"\/public\/images\/img\/promo-selection.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 31239,
+		"inputAbbreviatedPath": "\/public\/images\/img\/promo-selection.png",
+		"outputAbbreviatedPath": "\/public\/images\/img\/promo-selection.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 1
