@@ -352,6 +352,7 @@ hr {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	height: 10px;	// Fix for a bug in Internet Explorer's implementation of Flex layout
 	min-height: 650px;
 	padding-top: 50px;
 	color: $white;
@@ -404,6 +405,7 @@ header {
 		
 		@include tablet {
 			width: 192px;
+			height: 31px;
 		}
 	}
 }
