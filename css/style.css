@@ -870,6 +870,7 @@ hr {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
+  height: 10px;
   min-height: 650px;
   padding-top: 50px;
   color: #FFFFFF;
@@ -909,7 +910,8 @@ header {
     pointer-events: none; }
     @media (min-width: 600px) {
       .logo > object {
-        width: 192px; } }
+        width: 192px;
+        height: 31px; } }
 
 .menu-trigger {
   position: relative;
