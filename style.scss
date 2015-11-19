@@ -70,6 +70,10 @@ html {
 	overflow-x: hidden;
 }
 
+body {
+	font-family: 'Open Sans', sans-serif;
+}
+
 a {
 	color: $light-blue;
 	text-decoration: none;
@@ -78,6 +82,10 @@ a {
 	&:focus {
 		text-decoration: underline;
 	}
+}
+
+p {
+	margin: 1rem auto;
 }
 
 h1,
@@ -96,6 +104,7 @@ h1,
 
 h2,
 .h2 {
+	margin: 1.7em 0 .8em;
 	font-size: 1.7rem;	// 34px
 	color: $blue;
 	text-transform: uppercase;
@@ -339,11 +348,11 @@ hr {
 }
 
 .hero-block {
-	min-height: 650px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-content: center;
+	min-height: 650px;
 	padding-top: 50px;
 	color: $white;
 	text-align: left;
@@ -509,7 +518,6 @@ header {
 .certified .certified-link,
 .distributors .distributors-link,
 .about .about-link,
-.generic .generic-link,
 .faq .faq-link {
 	/* Highlight current page */
 	font-weight: bold;

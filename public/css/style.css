@@ -622,12 +622,18 @@ html {
   line-height: 1.5;
   overflow-x: hidden; }
 
+body {
+  font-family: 'Open Sans', sans-serif; }
+
 a {
   color: #3693B3;
   text-decoration: none; }
   a:hover,
   a:focus {
     text-decoration: underline; }
+
+p {
+  margin: 1rem auto; }
 
 h1,
 .h1 {
@@ -644,6 +650,7 @@ h1,
 
 h2,
 .h2 {
+  margin: 1.7em 0 0.8em;
   font-size: 1.7rem;
   color: #2C87A3;
   text-transform: uppercase;
@@ -845,7 +852,6 @@ hr {
       padding: 0; } }
 
 .hero-block {
-  min-height: 650px;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -862,6 +868,7 @@ hr {
   -webkit-align-content: center;
       -ms-flex-line-pack: center;
           align-content: center;
+  min-height: 650px;
   padding-top: 50px;
   color: #FFFFFF;
   text-align: left;
@@ -1002,7 +1009,6 @@ header {
 .certified .certified-link,
 .distributors .distributors-link,
 .about .about-link,
-.generic .generic-link,
 .faq .faq-link {
   /* Highlight current page */
   font-weight: bold; }

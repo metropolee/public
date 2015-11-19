@@ -6,38 +6,6 @@
 
 /* This css stinks. This has been put up in a hurry to make up for a markup that I cannot control and that has been done by someone who doesn't care shit about other people working on their code. The idea is to have everything put back into the main stylesheet and cleaned up properly afterwards. Now I can't even access the main css! */
 
-body {
-	font-family: 'Open Sans', sans-serif;
-}
-
-.menu-trigger > span {
-	text-indent: 99999px;
-	line-height: 0;
-}
-
-.logo > object {
-	width: 191px;
-	pointer-events: none;
-}
-
-@media (min-width:600px) {
-	.logo > object {
-		width: 192px;
-	}
-}
-
-h2 {
-	margin: 1.7em 0 .8em;
-}
-
-p {
-	margin: 1rem auto;
-}
-
-.generic .generic-link {
-	font-weight: normal !important;
-}
-
 .members div.to-blur,
 .signup div.to-blur {
 	text-align: center;
