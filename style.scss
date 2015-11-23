@@ -381,11 +381,56 @@ hr {
 /* @group HEADER */
 
 header {
-	position: absolute;
+	position: fixed;
+	top: 0;
 	left: 0;
-	top: 40px;
 	width: 100%;
 	z-index: 10;
+	background-color: rgba($blue,1);
+	transition: all	.3s ease-in-out;
+}
+
+.inner-header {
+	transition: all	.3s ease-in-out;
+	
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 100px;
+		width: 100%;
+		max-width: 1160px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.mod-scrolled {
+	
+	.mobile-header {
+		transition: all	.3s ease-in-out;
+		box-shadow: 0px 1px 5px rgba(10, 10, 10, 0.4);
+	}
+	
+	@include desktop {
+		box-shadow: 0px 1px 5px rgba(10, 10, 10, 0.4);
+		
+		.mobile-header {
+			box-shadow: none;
+		}
+		
+		.inner-header {
+			height: 60px;
+		}
+	}
+}
+
+.mobile-header {
+	background-color: rgba($blue,1);
+	
+	@include desktop {
+		float: left;
+	}
 }
 
 .smartbanner-show header {
@@ -394,13 +439,19 @@ header {
 
 .logo {
 	display: inline-block;
-	padding: 7px 0;
+	padding: 10px 0;
 	
 	> object {
+		display: inline-block;
 		width: 191px;
+		vertical-align: middle;
 		pointer-events: none;
+	}
+	
+	@include tablet {
+		padding: 9px 0 18px;
 		
-		@include tablet {
+		> object {
 			width: 192px;
 			height: 31px;
 		}
@@ -408,16 +459,16 @@ header {
 }
 
 .menu-trigger {
-	position: relative;
-	float: right;
+	position: fixed;
 	top: 0;
-	right: 0;
+	right: 9%;
 	display: inline-block;
-	height: 50px;
+	height: 52px;
 	width: 50px;
+	z-index: 10;
 	
-	&::after {
-		display: none;
+	@include tablet {
+		height: 60px;
 	}
 
 	@include desktop {
@@ -454,11 +505,11 @@ header {
 	top: 0;
 	right: 0;
 	width: 80%;
-	height: 100%;
+	height: 100vh;
 	padding-top: 110px;
 	background-color: rgba(78, 80, 81, .9);
 	text-align: center;
-	z-index: -1;
+	z-index: 1;
 	overflow-y: auto;
 	transform: translate3d(100%,0,0);
 	transition: all .4s $easing;
@@ -467,6 +518,7 @@ header {
 		position: static;
 		float: right;
 		width: auto;
+		height: 53px;
 		padding: 0;
 		background: transparent;
 		transform: none;
@@ -537,10 +589,6 @@ header {
 }
 
 .menu-open {
-	position: fixed;
-	overflow: hidden;
-	max-height: 100%;
-	width: 100vw;
 	
 	.menu-container {
 		transform: translate3d(4%,0,0);

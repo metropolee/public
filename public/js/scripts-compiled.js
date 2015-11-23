@@ -1008,6 +1008,69 @@ new SmartBanner({
 //	, force: 'ios'
 });
 
+var currentScrollY = window.scrollY,
+	previousScrollY = currentScrollY,
+	alreadyFiring = false,
+	movingUp = false,
+	movingDown = false,
+	headerScrolled = false,
+	header = document.getElementById( 'header' );
+
+/**
+ * This is the actual function we need to call
+ */
+function updateHeader() {
+	if ( !headerScrolled && movingDown ) {
+		header.classList.add( 'mod-scrolled' );
+		headerScrolled = true;
+	} else if ( headerScrolled && movingUp ) {
+		header.classList.remove( 'mod-scrolled' );
+		headerScrolled = false;
+	} else if ( !headerScrolled && currentScrollY > 20 ) {
+		header.classList.add( 'mod-scrolled' );
+		headerScrolled = true;
+	}
+}
+
+/**
+ * This is what we are calling in requestAnimationFrame
+ */
+function update() {
+	movingUp = false;
+	movingDown = false;
+	if ( previousScrollY < currentScrollY && currentScrollY > 40 ) {
+		// We're scrolling down
+		movingDown = true;
+		updateHeader();
+	} else {
+		// We're scrolling up
+		movingUp = true;
+		if ( currentScrollY < 60 ) {
+			updateHeader();
+		}
+	}
+	alreadyFiring = false;
+}
+
+/**
+ * Calls requestAnimationFrame if it's not already been done
+ */
+function fireIt() {
+	if( !alreadyFiring ) {
+		requestAnimationFrame( update );
+		alreadyFiring = true;
+	}
+}
+
+/**
+ * Callback for our scroll event - just keeps track of the last scroll value
+ */
+function onScroll() {
+	previousScrollY = currentScrollY;
+	currentScrollY = window.scrollY;
+	fireIt();
+}
+
 function handleVideoPlayer() {
 	var videoTriggers = document.querySelectorAll( '.video-trigger' ),
 		videoPlayerContainer = document.querySelector( '.video-player-container' );
@@ -1050,6 +1113,7 @@ function cleanSignup() {
 cleanSignup();
 
 document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener( 'scroll', onScroll, false );
 	handleVideoPlayer();
 }, false);
 
