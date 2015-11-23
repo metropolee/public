@@ -14,24 +14,21 @@ $easing: cubic-bezier(0.68, -0.25, 0.265, 1.25);
 
 
 /***************** RESPONSIVE HELPERS *****************/
-$tablet: (min-width: 600px);
-$desktop: (min-width: 1025px);
-$big-desktop: (min-width: 1200px);
 
 @mixin tablet {
-	@media #{$tablet} {
+	@media (min-width: 600px) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media #{$desktop} {
+	@media (min-width: 1025px) {
 		@content;
 	}
 }
 
 @mixin big-desktop {
-	@media #{$big-desktop} {
+	@media (min-width: 1200px) {
 		@content;
 	}
 }
