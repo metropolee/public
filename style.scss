@@ -1,5 +1,6 @@
 @import "style_components/_normalize.scss";
 @import "style_components/_smart-app-banner.scss";
+@import "style_components/_fontello.scss";
 
 $main: #B3B4B6;
 $white: #FFFFFF;
@@ -1657,15 +1658,15 @@ input[type=checkbox] {
 		padding-top: 150px;
 		padding-bottom: 100px;
 		background-color: rgba($blue, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-800.jpg');
 		
 		@include tablet {
 			padding-top: 230px;
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/home-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/home-2560.jpg');
 		}
 	}
 }
@@ -1836,6 +1837,27 @@ footer {
 			&:last-child {
 				margin-right: 0;
 			}
+		}
+	}
+}
+
+.social {
+	float: right;
+	padding: 0;
+}
+
+.social-link {
+	list-style: none;
+	display: inline-block;
+	
+	> a {
+		color: inherit;
+		text-decoration: none;
+		
+		> span {
+			position: fixed;
+			top: -9999px;
+			left: -9999px;
 		}
 	}
 }
