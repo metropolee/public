@@ -49,7 +49,7 @@ function updateHeader() {
 	} else if ( headerScrolled && movingUp ) {
 		header.classList.remove( 'mod-scrolled' );
 		headerScrolled = false;
-	} else if ( !headerScrolled && currentScrollY > 20 ) {
+	} else if ( !headerScrolled && currentScrollY > 50 ) {
 		header.classList.add( 'mod-scrolled' );
 		headerScrolled = true;
 	}
@@ -61,14 +61,14 @@ function updateHeader() {
 function update() {
 	movingUp = false;
 	movingDown = false;
-	if ( previousScrollY < currentScrollY && currentScrollY > 40 ) {
+	if ( previousScrollY < currentScrollY && currentScrollY > 50 ) {
 		// We're scrolling down
 		movingDown = true;
 		updateHeader();
 	} else {
 		// We're scrolling up
 		movingUp = true;
-		if ( currentScrollY < 60 ) {
+		if ( currentScrollY < 50 ) {
 			updateHeader();
 		}
 	}
@@ -136,6 +136,7 @@ function cleanSignup() {
 cleanSignup();
 
 document.addEventListener('DOMContentLoaded', function() {
+	updateHeader();
 	document.addEventListener( 'scroll', onScroll, false );
 	handleVideoPlayer();
 }, false);
