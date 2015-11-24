@@ -1,5 +1,8 @@
 /* @override 
-	http://www.metropolee.com/common/templates/admin/css/sb-admin.css */
+	http://www.metropolee.com/common/templates/admin/css/sb-admin.css
+	http://metropolee.com/common/templates/admin/css/sb-admin.css
+	https://www.metropolee.com/common/templates/admin/css/sb-admin.css
+	https://metropolee.com/common/templates/admin/css/sb-admin.css */
 /* 
 Author: Start Bootstrap - http://startbootstrap.com
 'SB Admin' HTML Template by Start Bootstrap
@@ -545,6 +548,11 @@ td.vertical-center {
 	.metro .files-table p > a {
 		width: auto;
 	}
+}
+
+div.navbar-collapse.navbar-ex1-collapse.collapse.in ul.nav.navbar-nav.side-nav {
+	height: auto !important;
+	padding-bottom: 50px;
 }
 
 /***************** MAB STUFF *****************/
