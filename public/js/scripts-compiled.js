@@ -1047,9 +1047,19 @@ function cleanSignup() {
 		});
 	}
 }
-cleanSignup();
+function removeCreditCard() {
+	var creditCardPaymentForm = document.getElementById( 'frmPayment_2' );
+	if ( creditCardPaymentForm ) {
+		var amount = creditCardPaymentForm.querySelector( 'input[name=total]' ).value;
+		if ( amount > 1800 ) {
+			creditCardPaymentForm.style.display = 'none';
+		}
+	}
+}
 
 document.addEventListener('DOMContentLoaded', function() {
 	handleVideoPlayer();
+	cleanSignup();
+	removeCreditCard();
 }, false);
 
