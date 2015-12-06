@@ -387,8 +387,22 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 10;
-	background-color: rgba($blue,1);
 	transition: all	.3s ease-in-out;
+	
+	&::before {
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		background-color: $blue;
+		transform: scaleY(4.4);
+		transition: all .3s ease-in-out;
+		opacity: 0;
+		z-index: -1;
+	}
 }
 
 .inner-header {
@@ -408,13 +422,14 @@ header {
 
 .mod-scrolled {
 	
-	.mobile-header {
-		background-color: rgba($blue,1);
+	&::before {
+		transform: scaleY(1);
+		opacity: .9;
 		box-shadow: 0px 1px 5px rgba(10, 10, 10, 0.4);
 	}
 	
 	.logo {
-		padding-top: 10px;
+		transform: translateY(-40px);
 	}
 	
 	.menu-trigger {
@@ -422,14 +437,9 @@ header {
 	}
 	
 	@include desktop {
-		box-shadow: 0px 1px 5px rgba(10, 10, 10, 0.4);
 		
-		.mobile-header {
-			box-shadow: none;
-		}
-		
-		.inner-header {
-			height: 60px;
+		.menu-container {
+			transform: translateY(-40px);
 		}
 	}
 }
@@ -530,11 +540,12 @@ header {
 		position: static;
 		float: right;
 		width: auto;
-		height: 53px;
+		height: auto;
 		padding: 0;
 		background: transparent;
 		transform: none;
 		overflow: visible;
+		transition-duration: .3s;
 	}
 }
 
@@ -555,7 +566,14 @@ header {
 	@include desktop {
 		display: inline-block;
 		margin: 0 5px;
+		padding: 0 10px;
+		vertical-align: middle;
 		transform: translate3d(0,0,0);
+		
+		> a {
+			padding: 10px 0;
+			display: inline-block;
+		}
 		
 		&:last-child {
 			display: inline-block;
@@ -626,12 +644,12 @@ header {
 /* @group HOMEPAGE */
 
 .homepage .button-solid {
-	color: $red;
+	color: $blue;
 }
 
 @include desktop {
 	.homepage .menu-voice:last-child > a {
-		color: $red;
+		color: $blue;
 	}
 }
 
@@ -639,8 +657,7 @@ header {
 	position: relative;
 	padding-top: 130px;
 	color: $white;
-	background-color: $red;
-	/*background: $red url('//metropolee.s3.amazonaws.com/images/img/home-img-1.svg') no-repeat;*/
+	background-color: $blue;
 	background-size: auto 90%;
 	background-position: -80% bottom;
 	text-align: left;
@@ -661,10 +678,6 @@ header {
 			color: $red;
 		}
 	}
-	
-	/*@media (min-width: 370px) {
-		background-position: -90% bottom;
-	}*/
 	
 	@include tablet {
 		padding-top: 120px !important;
@@ -1037,17 +1050,6 @@ header {
 	}
 }
 
-/*.green-block {
-	padding-top: 100px;
-	background: url('//metropolee.s3.amazonaws.com/images/img/home-img-2.svg') repeat-x left bottom;
-	min-height: 600px;
-	
-	.button-solid,
-	.button:hover {
-		color: $dark;
-	}
-}*/
-
 .video-player-container {
 	display: flex;
 	flex-direction: column;
@@ -1413,6 +1415,10 @@ input[type=checkbox] {
 		color: $yellow;
 	}
 	
+	header::before {
+		background-color: $yellow;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $yellow;
@@ -1467,6 +1473,10 @@ input[type=checkbox] {
 		color: $dark;
 	}
 	
+	header::before {
+		background-color: $dark;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $dark;
@@ -1508,6 +1518,10 @@ input[type=checkbox] {
 	
 	.button-solid {
 		color: $green;
+	}
+	
+	header::before {
+		background-color: $green;
 	}
 	
 	@include desktop {
@@ -1659,6 +1673,10 @@ input[type=checkbox] {
 		color: $blue;
 	}
 	
+	header::before {
+		background-color: $blue;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $blue;
@@ -1713,6 +1731,10 @@ input[type=checkbox] {
 	
 	.button-solid {
 		color: $green;
+	}
+	
+	header::before {
+		background-color: $green;
 	}
 	
 	@include desktop {
