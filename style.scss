@@ -1,5 +1,6 @@
 @import "style_components/_normalize.scss";
 @import "style_components/_smart-app-banner.scss";
+@import "style_components/_fontello.scss";
 
 $main: #B3B4B6;
 $white: #FFFFFF;
@@ -14,24 +15,21 @@ $easing: cubic-bezier(0.68, -0.25, 0.265, 1.25);
 
 
 /***************** RESPONSIVE HELPERS *****************/
-$tablet: (min-width: 600px);
-$desktop: (min-width: 1025px);
-$big-desktop: (min-width: 1200px);
 
 @mixin tablet {
-	@media #{$tablet} {
+	@media (min-width: 600px) {
 		@content;
 	}
 }
 
 @mixin desktop {
-	@media #{$desktop} {
+	@media (min-width: 1025px) {
 		@content;
 	}
 }
 
 @mixin big-desktop {
-	@media #{$big-desktop} {
+	@media (min-width: 1200px) {
 		@content;
 	}
 }
@@ -384,11 +382,74 @@ hr {
 /* @group HEADER */
 
 header {
-	position: absolute;
+	position: fixed;
+	top: 0;
 	left: 0;
-	top: 40px;
 	width: 100%;
 	z-index: 10;
+	transition: all	.3s ease-in-out;
+	
+	&::before {
+		content: '';
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 50px;
+		background-color: $blue;
+		transform: scaleY(4.4);
+		transition: all .3s ease-in-out;
+		opacity: 0;
+		z-index: -1;
+	}
+}
+
+.inner-header {
+	transition: all	.3s ease-in-out;
+	
+	@include desktop {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		height: 130px;
+		width: 100%;
+		max-width: 1160px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.mod-scrolled {
+	
+	&::before {
+		transform: scaleY(1);
+		opacity: .9;
+		box-shadow: 0px 1px 5px rgba(10, 10, 10, 0.4);
+	}
+	
+	.logo {
+		transform: translateY(-40px);
+	}
+	
+	.menu-trigger {
+		transform: translateY(0);
+	}
+	
+	@include desktop {
+		
+		.menu-container {
+			transform: translateY(-40px);
+		}
+	}
+}
+
+.mobile-header {
+	transition: all	.3s ease-in-out;
+	
+	@include desktop {
+		float: left;
+	}
 }
 
 .smartbanner-show header {
@@ -397,13 +458,20 @@ header {
 
 .logo {
 	display: inline-block;
-	padding: 7px 0;
+	padding: 50px 0 10px;
+	transition: all	.3s ease-in-out;
 	
 	> object {
+		display: inline-block;
 		width: 191px;
+		vertical-align: middle;
 		pointer-events: none;
+	}
+	
+	@include tablet {
+		padding: 9px 0 18px;
 		
-		@include tablet {
+		> object {
 			width: 192px;
 			height: 31px;
 		}
@@ -411,16 +479,18 @@ header {
 }
 
 .menu-trigger {
-	position: relative;
-	float: right;
+	position: fixed;
 	top: 0;
-	right: 0;
+	right: 9%;
 	display: inline-block;
-	height: 50px;
+	height: 52px;
 	width: 50px;
+	z-index: 10;
+	transition: all	.3s ease-in-out;
+	transform: translateY(40px);
 	
-	&::after {
-		display: none;
+	@include tablet {
+		height: 60px;
 	}
 
 	@include desktop {
@@ -457,11 +527,11 @@ header {
 	top: 0;
 	right: 0;
 	width: 80%;
-	height: 100%;
+	height: 100vh;
 	padding-top: 110px;
 	background-color: rgba(78, 80, 81, .9);
 	text-align: center;
-	z-index: -1;
+	z-index: 1;
 	overflow-y: auto;
 	transform: translate3d(100%,0,0);
 	transition: all .4s $easing;
@@ -470,10 +540,12 @@ header {
 		position: static;
 		float: right;
 		width: auto;
+		height: auto;
 		padding: 0;
 		background: transparent;
 		transform: none;
 		overflow: visible;
+		transition-duration: .3s;
 	}
 }
 
@@ -494,7 +566,14 @@ header {
 	@include desktop {
 		display: inline-block;
 		margin: 0 5px;
+		padding: 0 10px;
+		vertical-align: middle;
 		transform: translate3d(0,0,0);
+		
+		> a {
+			padding: 10px 0;
+			display: inline-block;
+		}
 		
 		&:last-child {
 			display: inline-block;
@@ -540,10 +619,6 @@ header {
 }
 
 .menu-open {
-	position: fixed;
-	overflow: hidden;
-	max-height: 100%;
-	width: 100vw;
 	
 	.menu-container {
 		transform: translate3d(4%,0,0);
@@ -569,12 +644,12 @@ header {
 /* @group HOMEPAGE */
 
 .homepage .button-solid {
-	color: $red;
+	color: $blue;
 }
 
 @include desktop {
 	.homepage .menu-voice:last-child > a {
-		color: $red;
+		color: $blue;
 	}
 }
 
@@ -582,8 +657,7 @@ header {
 	position: relative;
 	padding-top: 130px;
 	color: $white;
-	background-color: $red;
-	/*background: $red url('//metropolee.s3.amazonaws.com/images/img/home-img-1.svg') no-repeat;*/
+	background-color: $blue;
 	background-size: auto 90%;
 	background-position: -80% bottom;
 	text-align: left;
@@ -604,10 +678,6 @@ header {
 			color: $red;
 		}
 	}
-	
-	/*@media (min-width: 370px) {
-		background-position: -90% bottom;
-	}*/
 	
 	@include tablet {
 		padding-top: 120px !important;
@@ -693,14 +763,14 @@ header {
 		margin: 30px auto;
 	}
 	
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg');
 	
 	@include tablet {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg');
 	}
 	
 	@include desktop {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg');
 		background-attachment: fixed;
 	}
 }
@@ -742,7 +812,7 @@ header {
 		padding-left: .5rem;
 		
 		&::before {
-			content: url(//metropolee.s3.amazonaws.com/images/icons/check.svg);
+			content: url('//metropolee.s3.amazonaws.com/images/icons/check.svg');
 			margin-left: -50px;
 			margin-right: .5rem;
 		}
@@ -807,12 +877,12 @@ header {
 		}
 		
 		.benefit-list li::before {
-			content: url(//metropolee.s3.amazonaws.com/images/icons/check-white.svg);
+			content: url('//metropolee.s3.amazonaws.com/images/icons/check-white.svg');
 		}
 	}
 	
 	.square-right {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg');
 		background-size: cover;
 		background-position: center;
 		text-align: center;
@@ -882,14 +952,14 @@ header {
 
 .homepage .last-block {
 	text-align: center;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/home-800.jpg');
 	
 	@include tablet {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-1280.jpg');
 	}
 	
 	@include desktop {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-2560.jpg');
 	}
 }
 
@@ -979,17 +1049,6 @@ header {
 		margin-left: 30px;
 	}
 }
-
-/*.green-block {
-	padding-top: 100px;
-	background: url('//metropolee.s3.amazonaws.com/images/img/home-img-2.svg') repeat-x left bottom;
-	min-height: 600px;
-	
-	.button-solid,
-	.button:hover {
-		color: $dark;
-	}
-}*/
 
 .video-player-container {
 	display: flex;
@@ -1281,26 +1340,26 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($blue, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg');
 		}
 	}
 	
 	.last-block {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg');
 		}
 	}
 }
@@ -1356,6 +1415,10 @@ input[type=checkbox] {
 		color: $yellow;
 	}
 	
+	header::before {
+		background-color: $yellow;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $yellow;
@@ -1364,26 +1427,26 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($yellow, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg');
 		}
 	}
 	
 	.last-block {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg');
 		}
 	}
 }
@@ -1410,6 +1473,10 @@ input[type=checkbox] {
 		color: $dark;
 	}
 	
+	header::before {
+		background-color: $dark;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $dark;
@@ -1418,14 +1485,14 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($dark, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg');
 		}
 	}
 }
@@ -1453,6 +1520,10 @@ input[type=checkbox] {
 		color: $green;
 	}
 	
+	header::before {
+		background-color: $green;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $green;
@@ -1461,14 +1532,14 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($green, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/about-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/about-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/about-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/about-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/about-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/about-2560.jpg');
 		}
 	}
 }
@@ -1495,7 +1566,7 @@ input[type=checkbox] {
 	left: 0;
 	width: 0;
 	z-index: -1;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/sabrina.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1575,7 +1646,7 @@ input[type=checkbox] {
 	width: 50%;
 	height: 20vw;
 	text-align: center;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/sabrina.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1602,6 +1673,10 @@ input[type=checkbox] {
 		color: $blue;
 	}
 	
+	header::before {
+		background-color: $blue;
+	}
+	
 	@include desktop {
 		.menu-voice:last-child > a {
 			color: $blue;
@@ -1612,15 +1687,15 @@ input[type=checkbox] {
 		padding-top: 150px;
 		padding-bottom: 100px;
 		background-color: rgba($blue, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-800.jpg');
 		
 		@include tablet {
 			padding-top: 230px;
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/home-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/home-2560.jpg');
 		}
 	}
 }
@@ -1656,6 +1731,10 @@ input[type=checkbox] {
 	
 	.button-solid {
 		color: $green;
+	}
+	
+	header::before {
+		background-color: $green;
 	}
 	
 	@include desktop {
@@ -1793,6 +1872,62 @@ footer {
 			}
 		}
 	}
+}
+
+.lower-footer {
+	
+}
+
+.footer-hr {
+	margin: 1rem auto;
+}
+
+.footer-hr.mod-social {
+	display: none;
+	
+	@include desktop {
+		display: block;
+		float: right;
+		clear: both;
+		width: 250px;
+	}
+}
+
+.social {
+	position: relative;
+	float: none;
+	padding: 0;
+	margin: 2rem 0 4rem;
+	font-size: 1.3rem;
+	
+	@include desktop {
+		float: right;
+		clear: both;
+		margin-top: 0;
+	}
+}
+
+.social-link {
+	list-style: none;
+	display: inline-block;
+	
+	> a {
+		color: inherit;
+		text-decoration: none;
+		
+		> span {
+			position: fixed;
+			top: -9999px;
+			left: -9999px;
+		}
+	}
+}
+
+.address {
+	display: inline-block;
+	float: none;
+	font-size: .7rem;
+	line-height: 1.3;
 }
 
 /* @end */
