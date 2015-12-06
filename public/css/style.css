@@ -1323,17 +1323,17 @@ header {
   background-position: center;
   color: #FFFFFF;
   text-shadow: 0 1px 4px rgba(30, 30, 30, 0.4);
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg"); }
   .video-section p {
     margin-bottom: 100px; }
   .video-section img {
     margin: 30px auto; }
   @media (min-width: 600px) {
     .video-section {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg"); } }
   @media (min-width: 1025px) {
     .video-section {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg);
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg");
       background-attachment: fixed; } }
 
 .home-benefits {
@@ -1378,7 +1378,7 @@ header {
     margin: .5rem 0;
     padding-left: .5rem; }
     .benefit-list li::before {
-      content: url(//metropolee.s3.amazonaws.com/images/icons/check.svg);
+      content: url("//metropolee.s3.amazonaws.com/images/icons/check.svg");
       margin-left: -50px;
       margin-right: .5rem; }
   .benefit-list strong {
@@ -1427,9 +1427,9 @@ header {
       color: inherit; }
     .home-squares .square-left .benefit-list li::before,
     .home-squares .square-right .benefit-list li::before {
-      content: url(//metropolee.s3.amazonaws.com/images/icons/check-white.svg); }
+      content: url("//metropolee.s3.amazonaws.com/images/icons/check-white.svg"); }
   .home-squares .square-right {
-    background-image: url(//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg);
+    background-image: url("//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg");
     background-size: cover;
     background-position: center;
     text-align: center; }
@@ -1515,13 +1515,13 @@ header {
 
 .homepage .last-block {
   text-align: center;
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/home-800.jpg"); }
   @media (min-width: 600px) {
     .homepage .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/home-1280.jpg"); } }
   @media (min-width: 1025px) {
     .homepage .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/home-2560.jpg"); } }
 
 .links-area {
   background-image: #5a9fb4;
@@ -1848,22 +1848,22 @@ input[type=checkbox] {
 
 .distributors .hero-block {
   background-color: rgba(44, 135, 163, 0.75);
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg"); }
   @media (min-width: 600px) {
     .distributors .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg"); } }
   @media (min-width: 1025px) {
     .distributors .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg"); } }
 
 .distributors .last-block {
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg"); }
   @media (min-width: 600px) {
     .distributors .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg"); } }
   @media (min-width: 1025px) {
     .distributors .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg"); } }
 
 @media (min-width: 1025px) {
   .vantaggi-container {
@@ -1906,22 +1906,22 @@ input[type=checkbox] {
 
 .certified .hero-block {
   background-color: rgba(249, 179, 122, 0.75);
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg"); }
   @media (min-width: 600px) {
     .certified .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg"); } }
   @media (min-width: 1025px) {
     .certified .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg"); } }
 
 .certified .last-block {
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg"); }
   @media (min-width: 600px) {
     .certified .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg"); } }
   @media (min-width: 1025px) {
     .certified .last-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg"); } }
 
 .certified-thingy {
   display: -webkit-box;
@@ -1960,13 +1960,13 @@ input[type=checkbox] {
 
 .product .hero-block {
   background-color: rgba(78, 80, 81, 0.75);
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg"); }
   @media (min-width: 600px) {
     .product .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg"); } }
   @media (min-width: 1025px) {
     .product .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg"); } }
 
 .product-block h2 {
   text-align: center; }
@@ -1986,13 +1986,13 @@ input[type=checkbox] {
 
 .about .hero-block {
   background-color: rgba(98, 190, 125, 0.75);
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/about-800.jpg); }
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/about-800.jpg"); }
   @media (min-width: 600px) {
     .about .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/about-1280.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/about-1280.jpg"); } }
   @media (min-width: 1025px) {
     .about .hero-block {
-      background-image: url(//metropolee.s3.amazonaws.com/images/img/about-2560.jpg); } }
+      background-image: url("//metropolee.s3.amazonaws.com/images/img/about-2560.jpg"); } }
 
 .about-mammocci {
   color: #FFFFFF; }
@@ -2014,7 +2014,7 @@ input[type=checkbox] {
   left: 0;
   width: 0;
   z-index: -1;
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/sabrina.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -2075,7 +2075,7 @@ input[type=checkbox] {
   width: 50%;
   height: 20vw;
   text-align: center;
-  background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+  background-image: url("//metropolee.s3.amazonaws.com/images/img/sabrina.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -750,14 +750,14 @@ header {
 		margin: 30px auto;
 	}
 	
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-800.jpg');
 	
 	@include tablet {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-1280.jpg');
 	}
 	
 	@include desktop {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/home-video-2560.jpg');
 		background-attachment: fixed;
 	}
 }
@@ -799,7 +799,7 @@ header {
 		padding-left: .5rem;
 		
 		&::before {
-			content: url(//metropolee.s3.amazonaws.com/images/icons/check.svg);
+			content: url('//metropolee.s3.amazonaws.com/images/icons/check.svg');
 			margin-left: -50px;
 			margin-right: .5rem;
 		}
@@ -864,12 +864,12 @@ header {
 		}
 		
 		.benefit-list li::before {
-			content: url(//metropolee.s3.amazonaws.com/images/icons/check-white.svg);
+			content: url('//metropolee.s3.amazonaws.com/images/icons/check-white.svg');
 		}
 	}
 	
 	.square-right {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home/video-2.jpg');
 		background-size: cover;
 		background-position: center;
 		text-align: center;
@@ -939,14 +939,14 @@ header {
 
 .homepage .last-block {
 	text-align: center;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/home-800.jpg');
 	
 	@include tablet {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-1280.jpg');
 	}
 	
 	@include desktop {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/home-2560.jpg');
 	}
 }
 
@@ -1338,26 +1338,26 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($blue, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-1-2560.jpg');
 		}
 	}
 	
 	.last-block {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/dist-2-2560.jpg');
 		}
 	}
 }
@@ -1421,26 +1421,26 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($yellow, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-1-2560.jpg');
 		}
 	}
 	
 	.last-block {
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/cert-2-2560.jpg');
 		}
 	}
 }
@@ -1475,14 +1475,14 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($dark, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/prod-1-2560.jpg');
 		}
 	}
 }
@@ -1518,14 +1518,14 @@ input[type=checkbox] {
 	
 	.hero-block {
 		background-color: rgba($green, .75);
-		background-image: url(//metropolee.s3.amazonaws.com/images/img/about-800.jpg);
+		background-image: url('//metropolee.s3.amazonaws.com/images/img/about-800.jpg');
 		
 		@include tablet {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/about-1280.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/about-1280.jpg');
 		}
 		
 		@include desktop {
-			background-image: url(//metropolee.s3.amazonaws.com/images/img/about-2560.jpg);
+			background-image: url('//metropolee.s3.amazonaws.com/images/img/about-2560.jpg');
 		}
 	}
 }
@@ -1552,7 +1552,7 @@ input[type=checkbox] {
 	left: 0;
 	width: 0;
 	z-index: -1;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/sabrina.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -1632,7 +1632,7 @@ input[type=checkbox] {
 	width: 50%;
 	height: 20vw;
 	text-align: center;
-	background-image: url(//metropolee.s3.amazonaws.com/images/img/sabrina.jpg);
+	background-image: url('//metropolee.s3.amazonaws.com/images/img/sabrina.jpg');
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
