@@ -2290,7 +2290,7 @@ footer {
   list-style: none;
   display: inline-block; }
   .social-link > a {
-    color: inherit;
+    color: inherit !important;
     text-decoration: none; }
     .social-link > a > span {
       position: fixed;
