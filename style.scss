@@ -397,7 +397,7 @@ header {
 		left: 0;
 		right: 0;
 		height: 50px;
-		background-color: $blue;
+		background-color: $green;
 		transform: scaleY(4.4);
 		transition: all .3s ease-in-out;
 		opacity: 0;
@@ -408,7 +408,7 @@ header {
 .inner-header {
 	transition: all	.3s ease-in-out;
 	
-	@include desktop {
+	@include tablet {
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -469,12 +469,16 @@ header {
 	}
 	
 	@include tablet {
-		padding: 9px 0 18px;
+		padding-top: 10px;
 		
 		> object {
 			width: 192px;
 			height: 31px;
 		}
+	}
+	
+	@include desktop {
+		padding-top: 3px;
 	}
 }
 
@@ -645,6 +649,10 @@ header {
 
 .homepage .button-solid {
 	color: $blue;
+}
+
+.homepage header::before {
+	background-color: $blue;
 }
 
 @include desktop {
@@ -1666,6 +1674,25 @@ input[type=checkbox] {
 
 /* @group SIGNUP/LOGIN */
 
+.signup,
+.members {
+	// For INS
+	
+	.button-solid {
+		color: $blue;
+	}
+	
+	header::before {
+		background-color: $dark;
+	}
+	
+	@include desktop {
+		.menu-voice:last-child > a {
+			color: $dark !important;
+		}
+	}
+}
+
 .sign-up,
 .login {
 	
@@ -1674,12 +1701,12 @@ input[type=checkbox] {
 	}
 	
 	header::before {
-		background-color: $blue;
+		background-color: $dark;
 	}
 	
 	@include desktop {
 		.menu-voice:last-child > a {
-			color: $blue;
+			color: $dark;
 		}
 	}
 	
