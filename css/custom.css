@@ -6,8 +6,8 @@
 
 /* This css stinks. This has been put up in a hurry to make up for a markup that I cannot control and that has been done by someone who doesn't care shit about other people working on their code. The idea is to have everything put back into the main stylesheet and cleaned up properly afterwards. Now I can't even access the main css! */
 
-.members div.to-blur,
-.signup div.to-blur {
+.members > div.to-blur,
+.signup > div.to-blur {
 	text-align: center;
 	background-color: #2C87A3;
 	background-size: cover;
@@ -16,7 +16,7 @@
 	background-image: url(//metropolee.s3.amazonaws.com/images/img/home-800.jpg);
 }
 
-.signup div.to-blur {
+.signup > div.to-blur {
 	padding-top: 180px;
 }
 
@@ -26,12 +26,12 @@
 }
 
 @media (min-width: 600px) {
-	.members div.to-blur,
-	.signup div.to-blur {
+	.members > div.to-blur,
+	.signup > div.to-blur {
 		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-1280.jpg); } }
 @media (min-width: 1025px) {
-	.members div.to-blur,
-	.signup div.to-blur {
+	.members > div.to-blur,
+	.signup > div.to-blur {
 		background-image: url(//metropolee.s3.amazonaws.com/images/img/home-2560.jpg);
 		background-attachment: fixed;
 		background-position: center;

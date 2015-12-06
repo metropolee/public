@@ -998,7 +998,7 @@ header {
     left: 0;
     right: 0;
     height: 50px;
-    background-color: #2C87A3;
+    background-color: rgba(98, 190, 125, 0.8);
     -webkit-transform: scaleY(4.4);
         -ms-transform: scaleY(4.4);
             transform: scaleY(4.4);
@@ -1010,7 +1010,7 @@ header {
 .inner-header {
   -webkit-transition: all	.3s ease-in-out;
   transition: all	.3s ease-in-out; }
-  @media (min-width: 1025px) {
+  @media (min-width: 600px) {
     .inner-header {
       display: -webkit-box;
       display: -webkit-flex;
@@ -1075,10 +1075,13 @@ header {
     pointer-events: none; }
   @media (min-width: 600px) {
     .logo {
-      padding: 9px 0 18px; }
+      padding-top: 10px; }
       .logo > object {
         width: 192px;
         height: 31px; } }
+  @media (min-width: 1025px) {
+    .logo {
+      padding-top: 3px; } }
 
 .menu-trigger {
   position: fixed;
@@ -1252,6 +1255,9 @@ header {
 /* @group HOMEPAGE */
 .homepage .button-solid, .homepage .inline-input-solid, .homepage .captcha-solid {
   color: #2C87A3; }
+
+.homepage header::before {
+  background-color: #2C87A3; }
 
 @media (min-width: 1025px) {
   .homepage .menu-voice:last-child > a {
@@ -2109,6 +2115,21 @@ input[type=checkbox] {
 
 /* @end */
 /* @group SIGNUP/LOGIN */
+.signup .button-solid, .signup .inline-input-solid, .signup .captcha-solid,
+.members .button-solid,
+.members .inline-input-solid,
+.members .captcha-solid {
+  color: #2C87A3; }
+
+.signup header::before,
+.members header::before {
+  background-color: #4E5051; }
+
+@media (min-width: 1025px) {
+  .signup .menu-voice:last-child > a,
+  .members .menu-voice:last-child > a {
+    color: #4E5051 !important; } }
+
 .sign-up .button-solid, .sign-up .inline-input-solid, .sign-up .captcha-solid,
 .login .button-solid,
 .login .inline-input-solid,
@@ -2117,12 +2138,12 @@ input[type=checkbox] {
 
 .sign-up header::before,
 .login header::before {
-  background-color: #2C87A3; }
+  background-color: #4E5051; }
 
 @media (min-width: 1025px) {
   .sign-up .menu-voice:last-child > a,
   .login .menu-voice:last-child > a {
-    color: #2C87A3; } }
+    color: #4E5051; } }
 
 .sign-up .hero-block,
 .login .hero-block {
