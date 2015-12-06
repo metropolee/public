@@ -1852,9 +1852,37 @@ footer {
 	}
 }
 
+.lower-footer {
+	
+}
+
+.footer-hr {
+	margin: 1rem auto;
+}
+
+.footer-hr.mod-social {
+	display: none;
+	
+	@include desktop {
+		display: block;
+		float: right;
+		clear: both;
+		width: 250px;
+	}
+}
+
 .social {
-	float: right;
+	position: relative;
+	float: none;
 	padding: 0;
+	margin: 2rem 0 4rem;
+	font-size: 1.3rem;
+	
+	@include desktop {
+		float: right;
+		clear: both;
+		margin-top: 0;
+	}
 }
 
 .social-link {
@@ -1871,6 +1899,13 @@ footer {
 			left: -9999px;
 		}
 	}
+}
+
+.address {
+	display: inline-block;
+	float: none;
+	font-size: .7rem;
+	line-height: 1.3;
 }
 
 /* @end */

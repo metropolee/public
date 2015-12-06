@@ -2235,9 +2235,29 @@ footer {
         .footer-menu > li:last-child {
           margin-right: 0; } }
 
+.footer-hr {
+  margin: 1rem auto; }
+
+.footer-hr.mod-social {
+  display: none; }
+  @media (min-width: 1025px) {
+    .footer-hr.mod-social {
+      display: block;
+      float: right;
+      clear: both;
+      width: 250px; } }
+
 .social {
-  float: right;
-  padding: 0; }
+  position: relative;
+  float: none;
+  padding: 0;
+  margin: 2rem 0 4rem;
+  font-size: 1.3rem; }
+  @media (min-width: 1025px) {
+    .social {
+      float: right;
+      clear: both;
+      margin-top: 0; } }
 
 .social-link {
   list-style: none;
@@ -2249,6 +2269,12 @@ footer {
       position: fixed;
       top: -9999px;
       left: -9999px; }
+
+.address {
+  display: inline-block;
+  float: none;
+  font-size: .7rem;
+  line-height: 1.3; }
 
 /* @end */
 .alert {
