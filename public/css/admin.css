@@ -692,6 +692,15 @@ td.danger {
 
 /* @end */
 
+/* @group PERSONAL DETAILS */
+
+form[action^="/members/change_details.asp"] > .row > legend,
+form[action^="/members/change_details.asp"] > .row > .alert {
+	float: left;
+}
+
+/* @end */
+
 /***************** MAB STUFF *****************/
 
 .mab-image {
