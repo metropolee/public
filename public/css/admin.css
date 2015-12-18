@@ -20,7 +20,17 @@ For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap
 body {
   font-family: 'Open Sans', sans-serif;
   margin-top: 60px;
+  color: #444444;
 }
+
+/* @group FONT COLORS */
+/* Trying to fix the fact that bootstrap is overmanaging font colors */
+
+.ui-widget-content {
+	color: inherit;
+}
+
+/* @end */
 
 #wrapper {
   padding-left: 0;
@@ -413,24 +423,15 @@ div#icon-menu .icon-link {
 }
 
 .ui-widget-content a {
-    color: #0074FF;
+    color: #337ab7;
 }
 
 .ui-widget, table.table.table-small {
-	font-size: 11px !important;
+	font-size: 12px;
 }
 
 #pendingTransfers {
 	margin-bottom:10px;
-}
-
-.ui-tabs .ui-tabs-nav {
-    margin: 0;
-    padding: 0;
-}
-
-.ui-tabs .ui-tabs-nav li a {
-    padding: 8px;
 }
 
 .capitalize {
@@ -622,6 +623,74 @@ div.navbar-collapse.navbar-ex1-collapse.collapse.in ul.nav.navbar-nav.side-nav {
 	height: auto !important;
 	padding-bottom: 50px;
 }
+
+/* @group DASHBOARD */
+
+/***************** DASHBOARD *****************/
+
+.tabwrapper {
+	border-radius: 2px;
+}
+
+.ui-tabs .ui-tabs-nav {
+    margin: 0;
+    padding: 0;
+    border-radius: 2px;
+}
+
+.ui-tabs .ui-tabs-nav li a {
+    padding: 8px;
+}
+
+.panel {
+	box-shadow: none;
+	border-color: #e7e7e7;
+	border-radius: 2px;
+}
+
+.panel-default > .panel-heading {
+	background-color: #f8f8f8;
+	border-color: #e7e7e7;
+	color: inherit;
+}
+
+.panel .table > tbody > tr > td {
+	border-color: #e7e7e7;
+}
+
+.success,
+td.success,
+.table > tbody > tr > td.success {
+	background-color: #d1f8e7;
+}
+
+.table > tbody > tr.success > th,
+.table > tbody > tr.success > td {
+	background: transparent;
+}
+
+.success > td,
+td.success {
+	color: green;
+}
+
+.danger,
+td.danger,
+.table > tbody > tr > td.danger {
+	background-color: #ffeaea;
+}
+
+.table > tbody > tr.danger > th,
+.table > tbody > tr.danger > td {
+	background: transparent;
+}
+
+.danger > td,
+td.danger {
+	color: red;
+}
+
+/* @end */
 
 /***************** MAB STUFF *****************/
 
